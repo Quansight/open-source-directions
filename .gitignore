@@ -1,4 +1,12 @@
-_site/
-.sass-cache/
-.jekyll-cache/
+_site.DS_Store
+.jekyll
 .jekyll-metadata
+.bundle
+.sass-cache
+Gemfile
+Gemfile.lock
+node_modules
+package.json
+.ipynb_checkpoints
+.pytest_cache
+__pycache__
