@@ -13,6 +13,6 @@ data applications.
 ### Listen to the Episode!
 
 <audio controls>
-   <source src="https://drive.google.com/a/quansight.com/file/d/1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s/view?usp=sharing" type="audio/mp3">
+   <source src="http://docs.google.com/uc?export=open&id=1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s" type="audio/mp3">
    <p>Your browser does not support HTML5 audio :(</p>
 </audio>
