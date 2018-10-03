@@ -10,3 +10,4 @@ interactivity over very large or streaming datasets. Bokeh can help anyone who
 would like to quickly and easily create interactive plots, dashboards, and
 data applications.
 
+[Listen to the episode!](https://drive.google.com/file/d/1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s/view)
