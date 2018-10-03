@@ -19,5 +19,6 @@ data applications.
 
 [Dowload](https://drive.google.com/uc?export=download&id=1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s)
 
-Enclosed download
+Enclosed GUID download
+<guid>https://drive.google.com/uc?export=download&id=1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s</guid>
 <enclosure url="https://drive.google.com/uc?export=download&id=1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s" length="30951212" type="audio/mpeg"/>
