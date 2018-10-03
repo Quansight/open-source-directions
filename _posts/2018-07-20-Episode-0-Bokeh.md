@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Episode 0: Bokeh
+title: Episode 0 - Bokeh
 ---
 
 This episode features Bokeh, which is a web-based and interactive visualization
