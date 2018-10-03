@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Quansight
+name: Open Source Directions hosted by Quansight
 
 # Short bio or description (displayed in the header)
-description: We grow talent, build technology, and discover products by helping companies grow OSS communities to organize and analyze their data.
+description: Bringing you the news about the future of Open Source
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/34879953?s=200&v=4
@@ -21,7 +21,7 @@ footer-links:
   email: info@qunasight.com
   facebook:
   flickr:
-  github: Quansight/Quansight.github.io
+  github: Quansight/open-source-directions
   instagram:
   linkedin:
   pinterest:
@@ -41,7 +41,7 @@ google_analytics: UA-118053878-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://quansight.com
+url: https://www.quansight.com/open-source-directions
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
