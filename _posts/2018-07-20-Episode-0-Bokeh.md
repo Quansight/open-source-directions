@@ -13,11 +13,11 @@ data applications.
 ### Listen to the Episode!
 
 <audio controls>
-   <source src="http://docs.google.com/uc?export=open&id=1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s" type="audio/mp3">
+   <source src="https://drive.google.com/uc?export=download&id=1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s" type="audio/mp3">
    <p>Your browser does not support HTML5 audio :(</p>
 </audio>
 
-[Dowload](http://docs.google.com/uc?export=open&id=1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s)
+[Dowload](https://drive.google.com/uc?export=download&id=1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s)
 
-Enclosed
-<enclosure url="http://docs.google.com/uc?export=open&id=1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s" length="30951212" type="audio/mpeg"/>
+Enclosed download
+<enclosure url="https://drive.google.com/uc?export=download&id=1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s" length="30951212" type="audio/mpeg"/>
