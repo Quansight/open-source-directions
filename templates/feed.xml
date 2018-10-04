@@ -13,20 +13,53 @@
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
   <media:copyright>Quansight, LLC</media:copyright>
-  <media:thumbnail url="https://drive.google.com/open?id=1mqGVUbo3xpWnEuAb2Pu7Mn9cteJAVV4R" />
-  <media:keywords>open,source,python,roadmaps</media:keywords><media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology/Tech News</media:category><itunes:owner><itunes:email>info@quansight.com</itunes:email><itunes:name>Quansight, LLC</itunes:name></itunes:owner><itunes:author>Quansight, LLC</itunes:author><itunes:explicit>no</itunes:explicit><itunes:image href="https://drive.google.com/open?id=1mqGVUbo3xpWnEuAb2Pu7Mn9cteJAVV4R" /><itunes:keywords>open,source,python,roadmaps</itunes:keywords><itunes:subtitle>https://avatars1.githubusercontent.com/u/34879953?s=200&amp;v=4</itunes:subtitle><itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category><item><title>Episode 0 - Bokeh</title><link>http://feedproxy.google.com/~r/OpenSourceDirections/~3/UMOrssh2QkE/</link><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator><pubDate>Thu, 19 Jul 2018 17:00:00 PDT</pubDate><guid isPermaLink="false">https://www.quansight.com/open-source-directions/open-source-directions/Episode-0-Bokeh</guid><content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"><![CDATA[<p>This episode features Bokeh, which is a web-based and interactive visualization
-library for Python. Its goal is to provide elegant, concise construction of
-versatile graphics, and to extend this capability with high-performance
-interactivity over very large or streaming datasets. Bokeh can help anyone who
-would like to quickly and easily create interactive plots, dashboards, and
-data applications.</p>
+  <media:thumbnail url="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" />
+  <media:keywords>open,source,python,roadmaps</media:keywords>
+  <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology/Tech News</media:category>
+  <itunes:owner>
+    <itunes:email>info@quansight.com</itunes:email>
+    <itunes:name>Quansight, LLC</itunes:name></itunes:owner>
+    <itunes:author>Quansight, LLC</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" />
+    <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+    <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
+    <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    {% for episode in episodes %}
+    <item>
+      <title>{{ episode.title }}</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>{{ episode.date }}</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-{{ episode.number }}</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>{{ episode.description }}</p>
 
-<h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
-<audio controls="">
-   <source src="https://archive.org/download/open-source-directions-episode-0/osd0.mp3" type="audio/mp3" />
-   <p>Your browser does not support HTML5 audio :(</p>
-</audio>
+          <audio controls="">
+            <source src="{{ episode.mp3_url }}" type="audio/mp3" />
+            <p>Your browser does not support HTML5 audio :(</p>
+          </audio>
 
-<p><a href="https://archive.org/download/open-source-directions-episode-0/osd0.mp3">Dowload</a></p><img src="http://feeds.feedburner.com/~r/OpenSourceDirections/~4/UMOrssh2QkE" height="1" width="1" alt=""/>]]></content:encoded><description>This episode features Bokeh, which is a web-based and interactive visualization library for Python. Its goal is to provide elegant, concise construction of versatile graphics, and to extend this capability with high-performance interactivity over very large or streaming datasets. Bokeh can help anyone who would like to quickly and easily create interactive plots, dashboards, and data applications.</description><media:content url="http://feedproxy.google.com/~r/OpenSourceDirections/~5/B56T6o2OEiE/osd0.mp3" fileSize="30951212" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit><itunes:subtitle>This episode features Bokeh, which is a web-based and interactive visualization library for Python. Its goal is to provide elegant, concise construction of versatile graphics, and to extend this capability with high-performance interactivity over very lar</itunes:subtitle><itunes:author>Quansight, LLC</itunes:author><itunes:summary>This episode features Bokeh, which is a web-based and interactive visualization library for Python. Its goal is to provide elegant, concise construction of versatile graphics, and to extend this capability with high-performance interactivity over very large or streaming datasets. Bokeh can help anyone who would like to quickly and easily create interactive plots, dashboards, and data applications.</itunes:summary><itunes:keywords>open,source,python,roadmaps</itunes:keywords><feedburner:origLink>https://www.quansight.com/open-source-directions/open-source-directions/Episode-0-Bokeh/</feedburner:origLink><enclosure url="http://feedproxy.google.com/~r/OpenSourceDirections/~5/B56T6o2OEiE/osd0.mp3" length="30951212" type="audio/mpeg" /><feedburner:origEnclosureLink>https://archive.org/download/open-source-directions-episode-0/osd0.mp3</feedburner:origEnclosureLink></item><copyright>Copyright Quansight, LLC</copyright><media:credit role="author">Quansight, LLC</media:credit><media:rating>nonadult</media:rating><media:description type="plain">https://avatars1.githubusercontent.com/u/34879953?s=200&amp;v=4</media:description></channel>
+          <p><a href="{{ episode.mp3_url }}">Dowload</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>{{ episode.description }}</description>
+      <media:content url="{{ episode.mp3_url }}" fileSize="{{ episode.mp3_size }}" type="audio/mpeg" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>{{ episode.subtitle}}</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>{{ episode.description }}</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="{{ episode.mp3_url }}" length="{{ episode.mp3_size }}" type="audio/mpeg" />
+      <feedburner:origEnclosureLink>{{ episode.mp3_url }}</feedburner:origEnclosureLink>
+    </item>
+    {% endfor %}
+    <copyright>Quansight, LLC</copyright>
+    <media:credit role="author">Quansight, LLC</media:credit>
+    <media:rating>nonadult</media:rating>
+    <media:description type="plain">https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png</media:description>
+</channel>
 </rss>
