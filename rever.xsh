@@ -1,4 +1,5 @@
 from rever.activity import activity
+from xonsh.tools import print_color
 
 $GITHUB_ORG = 'Quansight'
 $PROJECT = $GITHUB_REPO = 'open-source-directions'
@@ -37,14 +38,17 @@ def feed():
     template = env.get_template('feed.xml')
     from datetime import datetime
     now = datetime.now()
+    print_color('{YELLOW}Rendering RSS feed...{NO_COLOR}')
     s = template.render(
+        now=now,
         episodes=episodes,
         )
     with open('feed.xml', 'w') as f:
         f.write(s)
-    #![git add feed.xml]
-    #![git commit -m "episode $VERSION at @(now.isoformat())"]
-    #![git push git@github.com:$GITHUB_ORG/$GITHUB_REPO gh-pages]
+    print_color('{YELLOW}success: feed.xml.{NO_COLOR}')
+    ![git add feed.xml]
+    ![git commit -m "episode $VERSION at @(now.isoformat())"]
+    ![git push git@github.com:$GITHUB_ORG/$GITHUB_REPO gh-pages]
 
 
 $ACTIVITIES = ['feed', 'tag', 'push_tag']
