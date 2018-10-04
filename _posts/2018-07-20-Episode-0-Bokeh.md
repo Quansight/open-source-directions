@@ -13,12 +13,8 @@ data applications.
 ### Listen to the Episode!
 
 <audio controls>
-   <source src="https://drive.google.com/uc?export=download&id=1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s" type="audio/mp3">
+   <source src="https://archive.org/download/open-source-directions-episode-0/osd0.mp3" type="audio/mp3">
    <p>Your browser does not support HTML5 audio :(</p>
 </audio>
 
-[Dowload](https://drive.google.com/uc?export=download&id=1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s)
-
-Enclosed GUID download
-<guid>https://drive.google.com/uc?export=download&id=1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s</guid>
-<enclosure url="https://drive.google.com/uc?export=download&id=1sOBC99-f77kFy4dy1IyIdqGk-v1d0-1s" length="30951212" type="audio/mpeg"/>
+[Dowload](https://archive.org/download/open-source-directions-episode-0/osd0.mp3)
