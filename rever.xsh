@@ -10,6 +10,8 @@ $SILENCE_REDUCED_TO = 0.2
 
 EPISODES = None
 
+__xonsh__.commands_cache.threadable_predictors['umdone'] = lambda *a, **k: False
+
 
 def load_episodes():
     """Loads episode YAML files."""
