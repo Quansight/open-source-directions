@@ -1,10 +1,12 @@
+import os
+
 from rever.activity import activity
 from xonsh.tools import print_color
 
 $GITHUB_ORG = 'Quansight'
 $PROJECT = $GITHUB_REPO = 'open-source-directions'
 $UMDONE_CACHE_DIR = os.path.join($REVER_DIR, 'umdone')
-
+$SILENCE_REDUCED_TO = 0.2
 
 EPISODES = None
 
@@ -60,4 +62,4 @@ def train():
 
 
 $ACTIVITIES = ['feed', 'tag', 'push_tag']
-$ACTIVITIES = ['train']
+$ACTIVITIES_TRAIN = ['train']
