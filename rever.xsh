@@ -3,6 +3,7 @@ from xonsh.tools import print_color
 
 $GITHUB_ORG = 'Quansight'
 $PROJECT = $GITHUB_REPO = 'open-source-directions'
+$UMDONE_CACHE_DIR = os.path.join($REVER_DIR, 'umdone')
 
 
 EPISODES = None
@@ -51,4 +52,12 @@ def feed():
     ![git push git@github.com:$GITHUB_ORG/$GITHUB_REPO gh-pages]
 
 
+@activity
+def train():
+    """Labels umm data for an audio file."""
+    episodes = load_episodes()
+    $[umdone train.xsh]
+
+
 $ACTIVITIES = ['feed', 'tag', 'push_tag']
+$ACTIVITIES = ['train']
