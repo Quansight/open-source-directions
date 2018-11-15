@@ -11,5 +11,8 @@ package.json
 .pytest_cache
 __pycache__
 
+# Data files
+*.h5
+
 # Rever
 rever/
