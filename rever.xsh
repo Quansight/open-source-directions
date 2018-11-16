@@ -63,5 +63,14 @@ def train():
     $[umdone train.xsh]
 
 
-$ACTIVITIES = ['feed', 'tag', 'push_tag']
+@activity
+def edit():
+    """Edits umms for an audio file."""
+    episodes = load_episodes()
+    $[umdone edit.xsh]
+
+
+$ACTIVITIES = ['edit', 'feed',
+               #'tag', 'push_tag'
+              ]
 $ACTIVITIES_TRAIN = ['train']
