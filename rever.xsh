@@ -73,4 +73,4 @@ def edit():
 $ACTIVITIES = ['edit', 'feed',
                #'tag', 'push_tag'
               ]
-$ACTIVITIES_TRAIN = ['mark']
+$ACTIVITIES_MARK = ['mark']
