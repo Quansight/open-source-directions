@@ -57,15 +57,15 @@ def feed():
 
 
 @activity
-def train():
-    """Labels umm data for an audio file."""
+def mark():
+    """Marks clip data for an audio file."""
     episodes = load_episodes()
-    $[umdone train.xsh]
+    $[umdone mark.xsh]
 
 
 @activity
 def edit():
-    """Edits umms for an audio file."""
+    """Edits an audio file."""
     episodes = load_episodes()
     $[umdone edit.xsh]
 
@@ -73,4 +73,4 @@ def edit():
 $ACTIVITIES = ['edit', 'feed',
                #'tag', 'push_tag'
               ]
-$ACTIVITIES_TRAIN = ['train']
+$ACTIVITIES_TRAIN = ['mark']
