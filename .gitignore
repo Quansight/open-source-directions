@@ -13,6 +13,9 @@ __pycache__
 
 # Data files
 *.h5
+*.wav
+*.ogg
+*.m4a
 
 # Rever
 rever/
