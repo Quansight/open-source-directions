@@ -12,6 +12,8 @@ if 'SILENCE_REDUCED_TO' not in ${...}:
 ![reduce-noise] && \
 ![remove-silence --reduce-to $SILENCE_REDUCED_TO] && \
 ![remove-clips --dbfile clips-osd$VERSION.h5] && \
+![fade-in --prefix https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/intro-jingle.wav] && \
+![fade-out --postfix https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/outro-jingle.wav] && \
 ![save osd$VERSION.ogg osd$VERSION.m4a]
 
 ![echo done editing episode]
