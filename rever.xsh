@@ -9,6 +9,11 @@ $UMDONE_CACHE_DIR = os.path.join($REVER_DIR, 'umdone')
 $SILENCE_REDUCED_TO = 0.2
 
 EPISODES = None
+AUDIO_FORMATS = ['ogg', 'm4a']
+AUDIO_MIME_TYPES = {
+    'ogg': 'audio/ogg',
+    'm4a': 'audio/mp4',
+    }
 
 __xonsh__.commands_cache.threadable_predictors['umdone'] = lambda *a, **k: False
 
@@ -25,10 +30,28 @@ def load_episodes():
         yaml = YAML(typ='safe')
         with open(fname) as f:
             episode = Namespace(**yaml.load(f))
+        episode.filename = fname
         episodes.append(episode)
     episodes.sort(key=lambda x: x.number)
     EPISODES = episodes
     return EPISODES
+
+
+@activity
+def update_episode_data():
+    """Adds episode URLs and sizes to YAML file."""
+    episodes = load_episodes()
+    episode = episodes[int($VERSION)]
+    audio_base = "osd" + str($VERSION) + "."
+    url_base = "https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd" + str($VERSION) + "."
+    for format in AUDIO_FORMATS:
+        setattr(episode, format + "_url", url_base + format)
+        setattr(episode, format + "_size", os.stat(audio_base + format).st_size)
+    from ruamel.yaml import YAML
+    yaml = YAML()
+    yaml.default_flow_style = False
+    with open(episode.filename, 'w') as f:
+        yaml.dump(episode.__dict__, f)
 
 
 @activity
@@ -92,9 +115,10 @@ def upload_to_digital_ocean():
         s3cmd put --config=@(cfgfile) @(fname) s3://open-source-directions/podcast/
 
 
-$ACTIVITIES = ['edit',
-               'upload_to_digital_ocean',
-               'feed',
+$ACTIVITIES = [#'edit',
+               #'upload_to_digital_ocean',
+               'update_episode_data',
+               #'feed',
                #'tag', 'push_tag'
               ]
 $ACTIVITIES_MARK = ['mark']

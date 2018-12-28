@@ -1,13 +1,14 @@
 number: 0
 title: Bokeh
+filename: episodes/bokeh.yaml
 subtitle: A web-based and interactive visualization library for Python
 date: 2018-07-20
-description: |
-    This episode features Bokeh, which is a web-based and interactive visualization
-    library for Python. Its goal is to provide elegant, concise construction of
-    versatile graphics, and to extend this capability with high-performance
-    interactivity over very large or streaming datasets. Bokeh can help anyone who
-    would like to quickly and easily create interactive plots, dashboards, and
-    data applications.
-mp3_url: https://nyc3.digitaloceanspaces.com/open-source-directions/podcast/osd0.mp3
-mp3_size: 30951212
+description: "This episode features Bokeh, which is a web-based and interactive visualization\n\
+  library for Python. Its goal is to provide elegant, concise construction of\nversatile\
+  \ graphics, and to extend this capability with high-performance\ninteractivity over\
+  \ very large or streaming datasets. Bokeh can help anyone who\nwould like to quickly\
+  \ and easily create interactive plots, dashboards, and\ndata applications.\n"
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd0.ogg
+ogg_size: 16446962
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd0.m4a
+m4a_size: 37821156

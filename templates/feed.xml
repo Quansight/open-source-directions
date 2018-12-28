@@ -37,19 +37,19 @@
 
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
-          <p><a href="{{ episode.mp3_url }}">Dowload</a></p>
+          <p><a href="{{ audio_url }}">Download</a></p>
           <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>{{ episode.description }}</description>
-      <media:content url="{{ episode.mp3_url }}" fileSize="{{ episode.mp3_size }}" type="audio/mpeg" />
+      <media:content url="{{ audio_url }}" fileSize="{{ audio_size }}" type="{{ audio_mime_type }}" />
       <itunes:explicit>no</itunes:explicit>
       <itunes:subtitle>{{ episode.subtitle }}</itunes:subtitle>
       <itunes:author>Quansight, LLC</itunes:author>
       <itunes:summary>{{ episode.description }}</itunes:summary>
       <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
       <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
-      <enclosure url="{{ episode.mp3_url }}" length="{{ episode.mp3_size }}" type="audio/mpeg" />
-      <feedburner:origEnclosureLink>{{ episode.mp3_url }}</feedburner:origEnclosureLink>
+      <enclosure url="{{ audio_url }}" length="{{ audio_size }}" type="{{ audio_mime_type }}" />
+      <feedburner:origEnclosureLink>{{ audio_url }}</feedburner:origEnclosureLink>
     </item>
     {% endfor %}
     <copyright>Quansight, LLC</copyright>
