@@ -123,7 +123,7 @@ def upload_to_digital_ocean():
     files = g`osd$VERSION.*`
     for fname in files:
         print_color('{YELLOW}Uploading ' + fname + '{NO_COLOR}')
-        s3cmd put --config=@(cfgfile) @(fname) s3://open-source-directions/podcast/
+        s3cmd put --config=@(cfgfile) --acl-public @(fname) s3://open-source-directions/podcast/
 
 
 $ACTIVITIES = ['edit',
