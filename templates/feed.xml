@@ -26,6 +26,8 @@
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
     {% for episode in episodes | reverse %}
+    {%- set audio_url = getattr(episode, audio_format + "_url") %}
+    {%- set audio_size = getattr(episode, audio_format + "_size") %}
     <item>
       <title>{{ episode.title }}</title>
       <link>https://www.quansight.com/open-source-directions/</link>

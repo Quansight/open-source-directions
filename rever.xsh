@@ -52,11 +52,15 @@ def update_episode_data():
     yaml.default_flow_style = False
     with open(episode.filename, 'w') as f:
         yaml.dump(episode.__dict__, f)
+    if len($(git diff @(episode.filename))) > 0:
+        ![git add @(episode.filename)]
+        ![git commit -m "episode $VERSION metadata updated"]
+        ![git push git@github.com:$GITHUB_ORG/$GITHUB_REPO gh-pages]
 
 
 @activity
 def feed():
-    """Generated RSS feed for podcast"""
+    """Generate RSS feeds for podcast"""
     episodes = load_episodes()
     from jinja2 import Environment, FileSystemLoader, select_autoescape
     env = Environment(
@@ -66,15 +70,22 @@ def feed():
     template = env.get_template('feed.xml')
     from datetime import datetime
     now = datetime.now()
-    print_color('{YELLOW}Rendering RSS feed...{NO_COLOR}')
-    s = template.render(
-        now=now,
-        episodes=episodes,
-        )
-    with open('feed.xml', 'w') as f:
-        f.write(s)
-    print_color('{YELLOW}success: feed.xml.{NO_COLOR}')
-    ![git add feed.xml]
+    feed_files = []
+    for format in AUDIO_FORMATS:
+        print_color('{YELLOW}Rendering ' + format + ' RSS feed...{NO_COLOR}')
+        s = template.render(
+            now=now,
+            episodes=episodes,
+            getattr=getattr,
+            audio_format=format,
+            audio_mime_type=AUDIO_MIME_TYPES[format],
+            )
+        feed_file = format + '-feed.xml'
+        with open(feed_file, 'w') as f:
+            f.write(s)
+        feed_files.append(feed_file)
+        print_color('{YELLOW}success: ' + feed_file + '.{NO_COLOR}')
+    ![git add @(feed_files)]
     ![git commit -m "episode $VERSION at @(now.isoformat())"]
     ![git push git@github.com:$GITHUB_ORG/$GITHUB_REPO gh-pages]
 
@@ -115,10 +126,11 @@ def upload_to_digital_ocean():
         s3cmd put --config=@(cfgfile) @(fname) s3://open-source-directions/podcast/
 
 
-$ACTIVITIES = [#'edit',
-               #'upload_to_digital_ocean',
+$ACTIVITIES = ['edit',
+               'upload_to_digital_ocean',
                'update_episode_data',
-               #'feed',
-               #'tag', 'push_tag'
+               'feed',
+               'tag',
+               'push_tag',
               ]
 $ACTIVITIES_MARK = ['mark']
