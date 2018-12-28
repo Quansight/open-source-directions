@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Fri Dec 28 10:02:05 2018</lastBuildDate>
+  <lastBuildDate>Fri Dec 28 10:11:13 2018</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -43,7 +43,7 @@ data applications.
 
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
-          <p><a href="">Download</a></p>
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd0.ogg">Download</a></p>
           <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>This episode features Bokeh, which is a web-based and interactive visualization
@@ -53,7 +53,7 @@ interactivity over very large or streaming datasets. Bokeh can help anyone who
 would like to quickly and easily create interactive plots, dashboards, and
 data applications.
 </description>
-      <media:content url="" fileSize="" type="audio/ogg" />
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd0.ogg" fileSize="16446962" type="audio/ogg" />
       <itunes:explicit>no</itunes:explicit>
       <itunes:subtitle>A web-based and interactive visualization library for Python</itunes:subtitle>
       <itunes:author>Quansight, LLC</itunes:author>
@@ -66,8 +66,8 @@ data applications.
 </itunes:summary>
       <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
       <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
-      <enclosure url="" length="" type="audio/ogg" />
-      <feedburner:origEnclosureLink></feedburner:origEnclosureLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd0.ogg" length="16446962" type="audio/ogg" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd0.ogg</feedburner:origEnclosureLink>
     </item>
     
     <copyright>Quansight, LLC</copyright>
