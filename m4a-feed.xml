@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="http://feeds.feedburner.com/~d/styles/rss2enclosuresfull.xsl"?>
+<?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+<channel>
+  <title>Open Source Directions hosted by Quansight</title>
+  <link>https://www.quansight.com/open-source-directions/</link>
+  <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
+  <description>Bringing you the news about the future of Open Source</description>
+  <language>en</language>
+  <lastBuildDate>Fri Dec 28 10:02:05 2018</lastBuildDate>
+  <generator>Rever https://regro.github.io/rever-docs/</generator>
+  <feedburner:info uri="opensourcedirections" />
+  <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+  <media:copyright>Quansight, LLC</media:copyright>
+  <media:thumbnail url="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" />
+  <media:keywords>open,source,python,roadmaps</media:keywords>
+  <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology/Tech News</media:category>
+  <itunes:owner>
+    <itunes:email>info@quansight.com</itunes:email>
+    <itunes:name>Quansight, LLC</itunes:name></itunes:owner>
+    <itunes:author>Quansight, LLC</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" />
+    <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+    <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
+    <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    <item>
+      <title>Bokeh</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Fri Jul 20 00:00:00 2018</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-0</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>This episode features Bokeh, which is a web-based and interactive visualization
+library for Python. Its goal is to provide elegant, concise construction of
+versatile graphics, and to extend this capability with high-performance
+interactivity over very large or streaming datasets. Bokeh can help anyone who
+would like to quickly and easily create interactive plots, dashboards, and
+data applications.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>This episode features Bokeh, which is a web-based and interactive visualization
+library for Python. Its goal is to provide elegant, concise construction of
+versatile graphics, and to extend this capability with high-performance
+interactivity over very large or streaming datasets. Bokeh can help anyone who
+would like to quickly and easily create interactive plots, dashboards, and
+data applications.
+</description>
+      <media:content url="" fileSize="" type="audio/mp4" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>A web-based and interactive visualization library for Python</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>This episode features Bokeh, which is a web-based and interactive visualization
+library for Python. Its goal is to provide elegant, concise construction of
+versatile graphics, and to extend this capability with high-performance
+interactivity over very large or streaming datasets. Bokeh can help anyone who
+would like to quickly and easily create interactive plots, dashboards, and
+data applications.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="" length="" type="audio/mp4" />
+      <feedburner:origEnclosureLink></feedburner:origEnclosureLink>
+    </item>
+    
+    <copyright>Quansight, LLC</copyright>
+    <media:credit role="author">Quansight, LLC</media:credit>
+    <media:rating>nonadult</media:rating>
+    <media:description type="plain">https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png</media:description>
+</channel>
+</rss>
