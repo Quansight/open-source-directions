@@ -89,6 +89,7 @@ def feed():
     ![git commit -m "episode $VERSION at @(now.isoformat())"]
     ![git push git@github.com:$GITHUB_ORG/$GITHUB_REPO gh-pages]
     print_color('{YELLOW}Uploading m4a-feed.xml to Digital Ocean for iTunes.{NO_COLOR}')
+    cfgfile = os.path.join($REVER_CONFIG_DIR, 'osd.s3cfg')
     s3cmd put --config=@(cfgfile) --acl-public m4a-feed.xml s3://open-source-directions/podcast/
 
 
