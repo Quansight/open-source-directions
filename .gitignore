@@ -16,6 +16,7 @@ __pycache__
 *.wav
 *.ogg
 *.m4a
+*.mp3
 
 # Rever
 rever/

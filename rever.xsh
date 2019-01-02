@@ -27,6 +27,8 @@ def load_episodes():
     from argparse import Namespace
     episodes = []
     for fname in `episodes/.*\.ya?ml`:
+        if fname == 'episodes/TEMPLATE.yaml':
+            continue
         yaml = YAML(typ='safe')
         with open(fname) as f:
             episode = Namespace(**yaml.load(f))
