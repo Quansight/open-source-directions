@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Wed Jan  2 14:57:54 2019</lastBuildDate>
+  <lastBuildDate>Wed Jan  2 17:48:45 2019</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,83 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    <item>
+      <title>Episode 2: XND</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Fri Sep  7 00:00:00 2018</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-2</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>XND is an extensible framework of C libraries and Python modules for
+handling typed memory blocks. XND recreates the foundations of NumPy as a
+number of smaller libraries, combining the lessons learned in the past twenty
+years of array computing in Python with the needs of newer applications.
+XND&#39;s type system is more general than NumPy&#39;s and allows unpacking
+arbitrarily nested Python type hierarchies directly to memory.
+
+XND&#39;s computational kernels are multimethods and can be generated
+and inserted into modular lookup tables at runtime. This opens the
+possibility for a large variety of applications written in different
+languages to use XND as a container backend.
+
+Ongoing work connects
+XND to Numba, Lapack/MKL and the CUDA kernel libraries. There is
+interest in integrating XND with a variety of libraries like Dask,
+xarray, Numba, Chainer, PyTorch, Tensorflow, PyMC4, TVM/NNVM,
+Plasma Store, Apache Arrow, and Tensor Comprehensions.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd2.m4a">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>XND is an extensible framework of C libraries and Python modules for
+handling typed memory blocks. XND recreates the foundations of NumPy as a
+number of smaller libraries, combining the lessons learned in the past twenty
+years of array computing in Python with the needs of newer applications.
+XND&#39;s type system is more general than NumPy&#39;s and allows unpacking
+arbitrarily nested Python type hierarchies directly to memory.
+
+XND&#39;s computational kernels are multimethods and can be generated
+and inserted into modular lookup tables at runtime. This opens the
+possibility for a large variety of applications written in different
+languages to use XND as a container backend.
+
+Ongoing work connects
+XND to Numba, Lapack/MKL and the CUDA kernel libraries. There is
+interest in integrating XND with a variety of libraries like Dask,
+xarray, Numba, Chainer, PyTorch, Tensorflow, PyMC4, TVM/NNVM,
+Plasma Store, Apache Arrow, and Tensor Comprehensions.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd2.m4a" fileSize="31385486" type="audio/mp4" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>Developer libraries for array computing</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>XND is an extensible framework of C libraries and Python modules for
+handling typed memory blocks. XND recreates the foundations of NumPy as a
+number of smaller libraries, combining the lessons learned in the past twenty
+years of array computing in Python with the needs of newer applications.
+XND&#39;s type system is more general than NumPy&#39;s and allows unpacking
+arbitrarily nested Python type hierarchies directly to memory.
+
+XND&#39;s computational kernels are multimethods and can be generated
+and inserted into modular lookup tables at runtime. This opens the
+possibility for a large variety of applications written in different
+languages to use XND as a container backend.
+
+Ongoing work connects
+XND to Numba, Lapack/MKL and the CUDA kernel libraries. There is
+interest in integrating XND with a variety of libraries like Dask,
+xarray, Numba, Chainer, PyTorch, Tensorflow, PyMC4, TVM/NNVM,
+Plasma Store, Apache Arrow, and Tensor Comprehensions.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd2.m4a" length="31385486" type="audio/mp4" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd2.m4a</feedburner:origEnclosureLink>
+    </item>
     
     <item>
       <title>Episode 1: Spyder</title>
