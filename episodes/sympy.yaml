@@ -2,9 +2,13 @@ number: 3
 title: SymPy
 subtitle: A Python library for symbolic mathematics
 date: 2018-09-28
-description: |
-    SymPy is a Python library for symbolic mathematics. It
-    aims to become a full-featured computer algebra system
-    (CAS) while keeping the code as simple as possible in order to be
-    comprehensible and easily extensible. SymPy is written entirely in Python.
-    All purely symbolic mathematical computation is in scope for SymPy.
+description: "SymPy is a Python library for symbolic mathematics. It\naims to become\
+  \ a full-featured computer algebra system\n(CAS) while keeping the code as simple\
+  \ as possible in order to be\ncomprehensible and easily extensible. SymPy is written\
+  \ entirely in Python.\nAll purely symbolic mathematical computation is in scope\
+  \ for SymPy.\n"
+filename: episodes/sympy.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd3.ogg
+ogg_size: 17545846
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd3.m4a
+m4a_size: 40111179
