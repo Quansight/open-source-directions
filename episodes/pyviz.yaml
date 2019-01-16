@@ -1,0 +1,12 @@
+number: 4
+title: PyViz
+subtitle: A coordinated effort to make data visualization in Python easier to use, easier to learn, and more powerful
+date: 201Y-10-29
+description: |
+    PyViz is a set of examples that help you see how various
+    Python packages can work together to solve a huge range
+    of visualization problems, from common situations to tricky
+    special cases. Although there is an installable package named pyviz,
+    it’s valuable mainly for its dependencies, which are a coherent set
+    of libraries designed to work well together. There is almost no code
+    actually in PyViz, apart from the examples in the tutorials.
