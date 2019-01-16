@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Mon Jan 14 16:07:34 2019</lastBuildDate>
+  <lastBuildDate>Wed Jan 16 11:54:42 2019</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,50 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    <item>
+      <title>Episode 4: PyViz</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Mon Oct 29 00:00:00 2018</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-4</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>PyViz is a set of examples that help you see how various
+Python packages can work together to solve a huge range
+of visualization problems, from common situations to tricky
+special cases. Although there is an installable package named pyviz,
+it’s valuable mainly for its dependencies, which are a coherent set
+of libraries designed to work well together. There is almost no code
+actually in PyViz, apart from the examples in the tutorials.</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd4.ogg">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>PyViz is a set of examples that help you see how various
+Python packages can work together to solve a huge range
+of visualization problems, from common situations to tricky
+special cases. Although there is an installable package named pyviz,
+it’s valuable mainly for its dependencies, which are a coherent set
+of libraries designed to work well together. There is almost no code
+actually in PyViz, apart from the examples in the tutorials.</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd4.ogg" fileSize="18342071" type="audio/ogg" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>A coordinated effort to make data visualization in Python easier to use, easier to learn, and more powerful</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>PyViz is a set of examples that help you see how various
+Python packages can work together to solve a huge range
+of visualization problems, from common situations to tricky
+special cases. Although there is an installable package named pyviz,
+it’s valuable mainly for its dependencies, which are a coherent set
+of libraries designed to work well together. There is almost no code
+actually in PyViz, apart from the examples in the tutorials.</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd4.ogg" length="18342071" type="audio/ogg" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd4.ogg</feedburner:origEnclosureLink>
+    </item>
     
     <item>
       <title>Episode 3: SymPy</title>
