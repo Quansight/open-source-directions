@@ -2,7 +2,7 @@ number: 4
 title: PyViz
 subtitle: A coordinated effort to make data visualization in Python easier to use,
   easier to learn, and more powerful
-date: 201Y-10-29
+date: 2018-10-29
 description: "PyViz is a set of examples that help you see how various\nPython packages\
   \ can work together to solve a huge range\nof visualization problems, from common\
   \ situations to tricky\nspecial cases. Although there is an installable package\
