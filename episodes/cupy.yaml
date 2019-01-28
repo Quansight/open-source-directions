@@ -1,0 +1,9 @@
+number: 5
+title: CuPy
+subtitle: An open-source matrix library accelerated with NVIDIA CUDA.
+date: 2019-10-29
+description: |
+    CuPy's interface is highly compatible with NumPy; in most cases it can be
+    used as a drop-in replacement.
+
+    Blog Post: https://quansight.github.io/Episode-5-CuPy/
