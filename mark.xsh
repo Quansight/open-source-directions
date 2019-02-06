@@ -9,7 +9,7 @@ if 'SILENCE_REDUCED_TO' not in ${...}:
     $SILENCE_REDUCED_TO = 0.2
 
 #![reduce-noise] && \
-![load https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd$VERSION-raw.mp3] && \
+![load https://open-source-directions.nyc3.digitaloceanspaces.com/podcast/osd$VERSION-raw.mp3] && \
 ![remove-silence --reduce-to $SILENCE_REDUCED_TO] && \
 ![mark-clips --db clips-osd$VERSION.h5]
 

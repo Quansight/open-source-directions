@@ -12,7 +12,7 @@ if 'SILENCE_REDUCED_TO' not in ${...}:
 #![fade-in --prefix https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/intro-jingle.wav] && \
 #![fade-out --postfix https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/outro-jingle.wav] && \
 
-![load https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd$VERSION-raw.mp3] && \
+![load https://open-source-directions.nyc3.digitaloceanspaces.com/podcast/osd$VERSION-raw.mp3] && \
 ![remove-silence --reduce-to $SILENCE_REDUCED_TO] && \
 ![remove-clips --dbfile clips-osd$VERSION.h5] && \
 ![save osd$VERSION.ogg osd$VERSION.m4a]
