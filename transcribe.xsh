@@ -11,6 +11,8 @@ if 'SILENCE_REDUCED_TO' not in ${...}:
 #![reduce-noise] && \
 ![load https://open-source-directions.nyc3.digitaloceanspaces.com/podcast/osd$VERSION-raw.mp3] && \
 ![remove-silence --reduce-to $SILENCE_REDUCED_TO] && \
-![aws-transcribe umdone]
+![aws-transcribe umdone] && \
+![aws-filter-words] && \
+![save osd$VERSION-transcribed.ogg]
 
 ![echo done]
