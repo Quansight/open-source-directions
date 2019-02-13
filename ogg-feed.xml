@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Wed Feb 13 16:43:19 2019</lastBuildDate>
+  <lastBuildDate>Wed Feb 13 17:38:30 2019</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -27,10 +27,57 @@
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
     
     <item>
+      <title>Episode 9: Datashader</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Wed Dec 19 00:00:00 2018</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-9</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>Datashader is a graphics pipeline system for creating meaningful
+representations of large datasets quickly and flexibly. Datashader
+breaks the creation of images into a series of explicit steps that
+allow computations to be done on intermediate representations.
+This approach allows accurate and effective visualizations to be
+produced automatically without trial-and-error parameter tuning,
+and also makes it simple for data scientists to focus on particular
+data and relationships of interest in a principled way.</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd9.ogg">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>Datashader is a graphics pipeline system for creating meaningful
+representations of large datasets quickly and flexibly. Datashader
+breaks the creation of images into a series of explicit steps that
+allow computations to be done on intermediate representations.
+This approach allows accurate and effective visualizations to be
+produced automatically without trial-and-error parameter tuning,
+and also makes it simple for data scientists to focus on particular
+data and relationships of interest in a principled way.</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd9.ogg" fileSize="16192037" type="audio/ogg" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>Turns even the largest data into images, accurately.</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>Datashader is a graphics pipeline system for creating meaningful
+representations of large datasets quickly and flexibly. Datashader
+breaks the creation of images into a series of explicit steps that
+allow computations to be done on intermediate representations.
+This approach allows accurate and effective visualizations to be
+produced automatically without trial-and-error parameter tuning,
+and also makes it simple for data scientists to focus on particular
+data and relationships of interest in a principled way.</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd9.ogg" length="16192037" type="audio/ogg" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd9.ogg</feedburner:origEnclosureLink>
+    </item>
+    
+    <item>
       <title>Episode 8: SciPy</title>
       <link>https://www.quansight.com/open-source-directions/</link>
       <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
-      <pubDate>Tue Dec  3 00:00:00 2019</pubDate>
+      <pubDate>Mon Dec  3 00:00:00 2018</pubDate>
       <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-8</guid>
       <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
         <![CDATA[<p>SciPy is open-source software for mathematics, science, and engineering.
@@ -77,7 +124,7 @@ upon by the world&#39;s leading scientists &amp; engineers.
       <title>Episode 7: GeoViews</title>
       <link>https://www.quansight.com/open-source-directions/</link>
       <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
-      <pubDate>Sat Nov 16 00:00:00 2019</pubDate>
+      <pubDate>Fri Nov 16 00:00:00 2018</pubDate>
       <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-7</guid>
       <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
         <![CDATA[<p>GeoViews is a Python library that makes it easy to explore and visualize
@@ -133,7 +180,7 @@ while always being able to access the raw data underlying any plot.
       <title>Episode 6: Intake</title>
       <link>https://www.quansight.com/open-source-directions/</link>
       <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
-      <pubDate>Wed Oct 30 00:00:00 2019</pubDate>
+      <pubDate>Tue Oct 30 00:00:00 2018</pubDate>
       <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-6</guid>
       <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
         <![CDATA[<p>Intake will appeal to different groups
@@ -168,7 +215,7 @@ use to smooth the progression of data from developers and providers to users.
       <title>Episode 5: CuPy</title>
       <link>https://www.quansight.com/open-source-directions/</link>
       <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
-      <pubDate>Tue Oct 29 00:00:00 2019</pubDate>
+      <pubDate>Mon Oct 29 00:00:00 2018</pubDate>
       <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-5</guid>
       <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
         <![CDATA[<p>CuPy&#39;s interface is highly compatible with NumPy; in most cases it can be
