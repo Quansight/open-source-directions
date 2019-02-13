@@ -1,0 +1,8 @@
+number: 10
+title: PyData/Sparse
+subtitle: Sparse arrays of arbitrary dimension
+date: 2018-12-19
+description: |
+    The aim of PyData/Sparse is to create sparse containers that implement the ndarray interface. Traditionally in the PyData ecosystem, sparse arrays have been provided by the scipy.sparse submodule. All containers there depend on and emulate the numpy.matrix interface. This means that they are limited to two dimensions and also do not work well in places where numpy.ndarray would work.
+
+    PyData/Sparse is well on its way to replacing scipy.sparse as the de-facto sparse array implementation in the PyData ecosystem.
