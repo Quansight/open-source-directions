@@ -1,0 +1,12 @@
+number: 8
+title: SciPy
+subtitle: Fundamental library for scientific computing
+date: 2019-12-03
+description: |
+    SciPy is open-source software for mathematics, science, and engineering.
+    It includes modules for statistics, optimization, integration, linear algebra,
+    Fourier transforms, signal and image processing, ODE solvers, and more.
+    SciPy provides many user-friendly and efficient numerical routines such
+    as for numerical integration and optimization. SciPy runs on all popular
+    operating systems, is easy to use, and powerful enough to be depended
+    upon by the world's leading scientists & engineers.
