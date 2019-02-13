@@ -1,7 +1,7 @@
 number: 7
 title: GeoViews
 subtitle: Geographic visualizations for HoloViews
-date: 2019-11-16
+date: 2018-11-16
 description: "GeoViews is a Python library that makes it easy to explore and visualize\n\
   geographical, meteorological, and oceanographic datasets, such as those\nused in\
   \ weather, climate, and remote sensing research. GeoViews is built\non the HoloViews\
