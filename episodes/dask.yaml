@@ -2,5 +2,12 @@ number: 11
 title: Dask
 subtitle: Flexible parallel computing in Python.
 date: 2019-01-14
-description: |
-    Dask provides advanced parallelism for analytics, enabling performance at scale for the tools you love. Dask is open source and freely available. It is developed in coordination with other community projects like Numpy, Pandas, and SciKit-Learn.
+description: "Dask provides advanced parallelism for analytics, enabling performance\
+  \ at scale for the tools you love. Dask is open source and freely available. It\
+  \ is developed in coordination with other community projects like Numpy, Pandas,\
+  \ and SciKit-Learn.\n"
+filename: episodes/dask.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd11.ogg
+ogg_size: 15660536
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd11.m4a
+m4a_size: 23657793
