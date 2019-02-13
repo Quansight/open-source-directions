@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Wed Feb 13 15:17:39 2019</lastBuildDate>
+  <lastBuildDate>Wed Feb 13 16:02:20 2019</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,62 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    <item>
+      <title>Episode 7: GeoViews</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Sat Nov 16 00:00:00 2019</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-7</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>GeoViews is a Python library that makes it easy to explore and visualize
+geographical, meteorological, and oceanographic datasets, such as those
+used in weather, climate, and remote sensing research. GeoViews is built
+on the HoloViews library for building flexible visualizations of
+multidimensional data. GeoViews adds a family of geographic plot
+types based on the Cartopy library, plotted using either the
+Matplotlib or Bokeh packages. With GeoViews, you can now work
+easily and naturally with large, multidimensional geographic
+datasets, instantly visualizing any subset or combination of them,
+while always being able to access the raw data underlying any plot.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd7.m4a">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>GeoViews is a Python library that makes it easy to explore and visualize
+geographical, meteorological, and oceanographic datasets, such as those
+used in weather, climate, and remote sensing research. GeoViews is built
+on the HoloViews library for building flexible visualizations of
+multidimensional data. GeoViews adds a family of geographic plot
+types based on the Cartopy library, plotted using either the
+Matplotlib or Bokeh packages. With GeoViews, you can now work
+easily and naturally with large, multidimensional geographic
+datasets, instantly visualizing any subset or combination of them,
+while always being able to access the raw data underlying any plot.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd7.m4a" fileSize="23121908" type="audio/mp4" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>Geographic visualizations for HoloViews</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>GeoViews is a Python library that makes it easy to explore and visualize
+geographical, meteorological, and oceanographic datasets, such as those
+used in weather, climate, and remote sensing research. GeoViews is built
+on the HoloViews library for building flexible visualizations of
+multidimensional data. GeoViews adds a family of geographic plot
+types based on the Cartopy library, plotted using either the
+Matplotlib or Bokeh packages. With GeoViews, you can now work
+easily and naturally with large, multidimensional geographic
+datasets, instantly visualizing any subset or combination of them,
+while always being able to access the raw data underlying any plot.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd7.m4a" length="23121908" type="audio/mp4" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd7.m4a</feedburner:origEnclosureLink>
+    </item>
     
     <item>
       <title>Episode 6: Intake</title>
