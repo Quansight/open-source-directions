@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Tue Feb  5 11:43:44 2019</lastBuildDate>
+  <lastBuildDate>Wed Feb 13 15:17:39 2019</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,41 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    <item>
+      <title>Episode 6: Intake</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Wed Oct 30 00:00:00 2019</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-6</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>Intake will appeal to different groups
+but is useful for all and acts as a common platform that everyone can
+use to smooth the progression of data from developers and providers to users.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd6.ogg">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>Intake will appeal to different groups
+but is useful for all and acts as a common platform that everyone can
+use to smooth the progression of data from developers and providers to users.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd6.ogg" fileSize="19345681" type="audio/ogg" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>A lightweight package for finding, investigating, loading and disseminating data</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>Intake will appeal to different groups
+but is useful for all and acts as a common platform that everyone can
+use to smooth the progression of data from developers and providers to users.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd6.ogg" length="19345681" type="audio/ogg" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd6.ogg</feedburner:origEnclosureLink>
+    </item>
     
     <item>
       <title>Episode 5: CuPy</title>
