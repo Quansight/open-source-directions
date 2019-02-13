@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Wed Feb 13 16:02:20 2019</lastBuildDate>
+  <lastBuildDate>Wed Feb 13 16:43:19 2019</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,53 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    <item>
+      <title>Episode 8: SciPy</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Tue Dec  3 00:00:00 2019</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-8</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>SciPy is open-source software for mathematics, science, and engineering.
+It includes modules for statistics, optimization, integration, linear algebra,
+Fourier transforms, signal and image processing, ODE solvers, and more.
+SciPy provides many user-friendly and efficient numerical routines such
+as for numerical integration and optimization. SciPy runs on all popular
+operating systems, is easy to use, and powerful enough to be depended
+upon by the world&#39;s leading scientists &amp; engineers.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd8.m4a">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>SciPy is open-source software for mathematics, science, and engineering.
+It includes modules for statistics, optimization, integration, linear algebra,
+Fourier transforms, signal and image processing, ODE solvers, and more.
+SciPy provides many user-friendly and efficient numerical routines such
+as for numerical integration and optimization. SciPy runs on all popular
+operating systems, is easy to use, and powerful enough to be depended
+upon by the world&#39;s leading scientists &amp; engineers.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd8.m4a" fileSize="24523031" type="audio/mp4" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>Fundamental library for scientific computing</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>SciPy is open-source software for mathematics, science, and engineering.
+It includes modules for statistics, optimization, integration, linear algebra,
+Fourier transforms, signal and image processing, ODE solvers, and more.
+SciPy provides many user-friendly and efficient numerical routines such
+as for numerical integration and optimization. SciPy runs on all popular
+operating systems, is easy to use, and powerful enough to be depended
+upon by the world&#39;s leading scientists &amp; engineers.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd8.m4a" length="24523031" type="audio/mp4" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd8.m4a</feedburner:origEnclosureLink>
+    </item>
     
     <item>
       <title>Episode 7: GeoViews</title>
