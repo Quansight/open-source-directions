@@ -2,5 +2,14 @@ number: 13
 title: Jupyter Ecosystem
 subtitle: The scope of the Jupyter project
 date: 2019-02-01
-description: |
-    Project Jupyter exists to develop open-source software, open-standards, and services for interactive computing across dozens of programming languages. The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+description: "Project Jupyter exists to develop open-source software, open-standards,\
+  \ and services for interactive computing across dozens of programming languages.\
+  \ The Jupyter Notebook is an open-source web application that allows you to create\
+  \ and share documents that contain live code, equations, visualizations and narrative\
+  \ text. Uses include: data cleaning and transformation, numerical simulation, statistical\
+  \ modeling, data visualization, machine learning, and much more.\n"
+filename: episodes/jupyter-ecosystem.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd13.ogg
+ogg_size: 19825363
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd13.m4a
+m4a_size: 29372358
