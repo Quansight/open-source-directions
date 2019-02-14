@@ -2,5 +2,10 @@ number: 12
 title: PySpark
 subtitle: Spark & Python
 date: 2019-01-18
-description: |
-    The Spark Python API (PySpark) exposes the Spark programming model to Pytho
+description: The Spark Python API (PySpark) exposes the Spark programming model to
+  Pytho
+filename: episodes/pyspark.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd12.ogg
+ogg_size: 19833726
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd12.m4a
+m4a_size: 29060907
