@@ -2,8 +2,12 @@ number: 14
 title: ITK
 subtitle: The Insight Toolkit
 date: 2019-02-21
-description: |
-    ITK is an open-source, cross-platform system that provides developers with
-    an extensive suite of software tools for image analysis.  Developed through
-    extreme programming methodologies, ITK employs leading-edge algorithms for
-    registering and segmenting multidimensional data.
+description: "ITK is an open-source, cross-platform system that provides developers\
+  \ with\nan extensive suite of software tools for image analysis.  Developed through\n\
+  extreme programming methodologies, ITK employs leading-edge algorithms for\nregistering\
+  \ and segmenting multidimensional data.\n"
+filename: episodes/itk.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd14.ogg
+ogg_size: 18028703
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd14.m4a
+m4a_size: 28762097
