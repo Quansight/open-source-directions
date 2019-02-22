@@ -1,0 +1,9 @@
+number: 14
+title: ITK
+subtitle: The Insight Toolkit
+date: 2019-02-21
+description: |
+    ITK is an open-source, cross-platform system that provides developers with
+    an extensive suite of software tools for image analysis.  Developed through
+    extreme programming methodologies, ITK employs leading-edge algorithms for
+    registering and segmenting multidimensional data.
