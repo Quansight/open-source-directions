@@ -98,6 +98,7 @@ def feed():
 @activity
 def mark():
     """Marks clip data for an audio file."""
+    __xonsh__.commands_cache.threadable_predictors['umdone'] = lambda *a, **k: False
     episodes = load_episodes()
     $[umdone mark.xsh]
 
@@ -105,6 +106,7 @@ def mark():
 @activity
 def edit():
     """Edits an audio file."""
+    __xonsh__.commands_cache.threadable_predictors['umdone'] = lambda *a, **k: False
     episodes = load_episodes()
     $[umdone edit.xsh]
 
