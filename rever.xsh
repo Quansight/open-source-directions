@@ -7,6 +7,7 @@ $GITHUB_ORG = 'Quansight'
 $PROJECT = $GITHUB_REPO = 'open-source-directions'
 $UMDONE_CACHE_DIR = os.path.join($REVER_DIR, 'umdone')
 $SILENCE_REDUCED_TO = 0.2
+$XONSH_INTERACTIVE = False
 
 EPISODES = None
 AUDIO_FORMATS = ['ogg', 'm4a']
