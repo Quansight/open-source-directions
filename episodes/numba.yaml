@@ -2,12 +2,15 @@ number: 15
 title: Numba
 subtitle: Python code, fast
 date: 2019-03-01
-description: |
-    Numba is an open source JIT compiler that translates a subset of
-    Python and NumPy code into fast machine code. Numba translates
-    Python functions to optimized machine code at runtime using the
-    Industry-standard LLVM compiler library. Numba-compiled numerical
-    algorithms in Python can approach the speeds of C or FORTRAN.
-    Users do not need to replacethe Python interpreter, run a separate
-    compilation step, or even have a C/C++ compiler installed. Applying
-    one of the Numba decorators to a Python function is all that is needed.
+description: "Numba is an open source JIT compiler that translates a subset of\nPython\
+  \ and NumPy code into fast machine code. Numba translates\nPython functions to optimized\
+  \ machine code at runtime using the\nIndustry-standard LLVM compiler library. Numba-compiled\
+  \ numerical\nalgorithms in Python can approach the speeds of C or FORTRAN.\nUsers\
+  \ do not need to replacethe Python interpreter, run a separate\ncompilation step,\
+  \ or even have a C/C++ compiler installed. Applying\none of the Numba decorators\
+  \ to a Python function is all that is needed.\n"
+filename: episodes/numba.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd15.ogg
+ogg_size: 19329586
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd15.m4a
+m4a_size: 30324209
