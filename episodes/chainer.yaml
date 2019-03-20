@@ -2,12 +2,15 @@ number: 16
 title: Chainer
 subtitle: Powerful, flexible and intuitive deep learning framework
 date: 2019-03-14
-description: |
-    Chainer is a powerful, flexible and intuitive deep learning framework.
-    Chainer supports CUDA computation. It only requires a few lines of code to
-    leverage a GPU. It also runs on multiple GPUs with little effort.
-    Chainer supports various network architectures including feed-forward nets,
-    convnets, recurrent nets and recursive nets. It also supports per-batch
-    architectures. Forward computation can include any control flow statements
-    of Python without lacking the ability of backpropagation. It makes code
-    intuitive and easy to debug.
+description: "Chainer is a powerful, flexible and intuitive deep learning framework.\n\
+  Chainer supports CUDA computation. It only requires a few lines of code to\nleverage\
+  \ a GPU. It also runs on multiple GPUs with little effort.\nChainer supports various\
+  \ network architectures including feed-forward nets,\nconvnets, recurrent nets and\
+  \ recursive nets. It also supports per-batch\narchitectures. Forward computation\
+  \ can include any control flow statements\nof Python without lacking the ability\
+  \ of backpropagation. It makes code\nintuitive and easy to debug.\n"
+filename: episodes/chainer.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd16.ogg
+ogg_size: 18882182
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd16.m4a
+m4a_size: 26344591
