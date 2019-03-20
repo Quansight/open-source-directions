@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Fri Feb 22 15:54:24 2019</lastBuildDate>
+  <lastBuildDate>Wed Mar 20 17:05:13 2019</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,56 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    <item>
+      <title>Episode 15: Numba</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Fri Mar  1 00:00:00 2019</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-15</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>Numba is an open source JIT compiler that translates a subset of
+Python and NumPy code into fast machine code. Numba translates
+Python functions to optimized machine code at runtime using the
+Industry-standard LLVM compiler library. Numba-compiled numerical
+algorithms in Python can approach the speeds of C or FORTRAN.
+Users do not need to replacethe Python interpreter, run a separate
+compilation step, or even have a C/C++ compiler installed. Applying
+one of the Numba decorators to a Python function is all that is needed.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd15.m4a">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>Numba is an open source JIT compiler that translates a subset of
+Python and NumPy code into fast machine code. Numba translates
+Python functions to optimized machine code at runtime using the
+Industry-standard LLVM compiler library. Numba-compiled numerical
+algorithms in Python can approach the speeds of C or FORTRAN.
+Users do not need to replacethe Python interpreter, run a separate
+compilation step, or even have a C/C++ compiler installed. Applying
+one of the Numba decorators to a Python function is all that is needed.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd15.m4a" fileSize="30324209" type="audio/mp4" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>Python code, fast</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>Numba is an open source JIT compiler that translates a subset of
+Python and NumPy code into fast machine code. Numba translates
+Python functions to optimized machine code at runtime using the
+Industry-standard LLVM compiler library. Numba-compiled numerical
+algorithms in Python can approach the speeds of C or FORTRAN.
+Users do not need to replacethe Python interpreter, run a separate
+compilation step, or even have a C/C++ compiler installed. Applying
+one of the Numba decorators to a Python function is all that is needed.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd15.m4a" length="30324209" type="audio/mp4" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd15.m4a</feedburner:origEnclosureLink>
+    </item>
     
     <item>
       <title>Episode 14: ITK</title>
