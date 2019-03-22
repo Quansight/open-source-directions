@@ -2,8 +2,12 @@ number: 17
 title: TensorFlow
 subtitle: An open source machine learning library for research and production.
 date: 2019-03-22
-description: |
-    TensorFlow is an end-to-end open source platform for machine learning.
-    It has a comprehensive, flexible ecosystem of tools, libraries and
-    community resources that lets researchers push the state-of-the-art
-    in ML and developers easily build and deploy ML powered applications.
+description: "TensorFlow is an end-to-end open source platform for machine learning.\n\
+  It has a comprehensive, flexible ecosystem of tools, libraries and\ncommunity resources\
+  \ that lets researchers push the state-of-the-art\nin ML and developers easily build\
+  \ and deploy ML powered applications.\n"
+filename: episodes/tensorflow.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd17.ogg
+ogg_size: 19636956
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd17.m4a
+m4a_size: 28476333
