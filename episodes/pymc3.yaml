@@ -1,0 +1,8 @@
+number: 18
+title: PyMC3
+subtitle: Probabilistic Programming in Python
+date: 2019-04-05
+description: |
+    PyMC3 is a probabilistic programming package for Python that allows users
+    to fit Bayesian models using a variety of numerical methods, most notably
+    Markov chain Monte Carlo (MCMC) and variational inference (VI).
