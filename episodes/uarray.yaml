@@ -2,7 +2,12 @@ number: 20
 title: Uarray
 subtitle: Array interface object for Python
 date: 2019-05-03
-description: |
-    Array interface object for Python with pluggable backends and a multiple-dispatch mechanism for defining down-stream functions.
-
-    CORRECTION: In the episode Hameer implied moving data from GPUs to CPUs won’t be a problem in PCIe 4,0. It’s actually in an Intel-proposed extension to PCIe 5.0.
+description: "Array interface object for Python with pluggable backends and a multiple-dispatch\
+  \ mechanism for defining down-stream functions.\n\nCORRECTION: In the episode Hameer\
+  \ implied moving data from GPUs to CPUs won’t be a problem in PCIe 4,0. It’s actually\
+  \ in an Intel-proposed extension to PCIe 5.0.\n"
+filename: episodes/uarray.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd20.ogg
+ogg_size: 13992497
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd20.m4a
+m4a_size: 21251037
