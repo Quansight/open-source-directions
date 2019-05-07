@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Mon Apr 22 10:23:16 2019</lastBuildDate>
+  <lastBuildDate>Tue May  7 10:41:12 2019</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,41 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    <item>
+      <title>Episode 20: Uarray</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Fri May  3 00:00:00 2019</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-20</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>Array interface object for Python with pluggable backends and a multiple-dispatch mechanism for defining down-stream functions.
+
+CORRECTION: In the episode Hameer implied moving data from GPUs to CPUs won’t be a problem in PCIe 4,0. It’s actually in an Intel-proposed extension to PCIe 5.0.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd20.m4a">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>Array interface object for Python with pluggable backends and a multiple-dispatch mechanism for defining down-stream functions.
+
+CORRECTION: In the episode Hameer implied moving data from GPUs to CPUs won’t be a problem in PCIe 4,0. It’s actually in an Intel-proposed extension to PCIe 5.0.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd20.m4a" fileSize="21251037" type="audio/mp4" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>Array interface object for Python</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>Array interface object for Python with pluggable backends and a multiple-dispatch mechanism for defining down-stream functions.
+
+CORRECTION: In the episode Hameer implied moving data from GPUs to CPUs won’t be a problem in PCIe 4,0. It’s actually in an Intel-proposed extension to PCIe 5.0.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd20.m4a" length="21251037" type="audio/mp4" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd20.m4a</feedburner:origEnclosureLink>
+    </item>
     
     <item>
       <title>Episode 19: Pyodide</title>
