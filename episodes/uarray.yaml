@@ -5,4 +5,4 @@ date: 2019-05-03
 description: |
     Array interface object for Python with pluggable backends and a multiple-dispatch mechanism for defining down-stream functions.
 
-    CORRECTION: In the video Hameer implied moving data from GPUs to CPUs won’t be a problem in PCIe 4,0. It’s actually in an Intel-proposed extension to PCIe 5.0.
+    CORRECTION: In the episode Hameer implied moving data from GPUs to CPUs won’t be a problem in PCIe 4,0. It’s actually in an Intel-proposed extension to PCIe 5.0.
