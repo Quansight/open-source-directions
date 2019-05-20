@@ -1,8 +1,16 @@
 number: 21
 title: xtensor/xframe
-subtitle: A C++ library meant for numerical analysis with multi-dimensional array expressions.
+subtitle: A C++ library meant for numerical analysis with multi-dimensional array
+  expressions.
 date: 2019-05-18
-description: |
-    xtensor provides an extensible expression system enabling lazy broadcasting, an API following the idioms of the C++ standard library, and tools to manipulate array expressions and build upon xtensor. xtensor containers are inspired by NumPy, the Python array programming library. Adaptors for existing data structures to be plugged into our expression system can easily be written.
-
-    xtensor requires a modern C++ compiler supporting C++14.
+description: "xtensor provides an extensible expression system enabling lazy broadcasting,\
+  \ an API following the idioms of the C++ standard library, and tools to manipulate\
+  \ array expressions and build upon xtensor. xtensor containers are inspired by NumPy,\
+  \ the Python array programming library. Adaptors for existing data structures to\
+  \ be plugged into our expression system can easily be written.\n\nxtensor requires\
+  \ a modern C++ compiler supporting C++14.\n"
+filename: episodes/xtensor.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd21.ogg
+ogg_size: 18580114
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd21.m4a
+m4a_size: 27031368
