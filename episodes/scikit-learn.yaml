@@ -1,0 +1,8 @@
+number: 22
+title: SciKit-Learn
+subtitle: A Python machine learning library
+date: 2019-05-31
+description: |
+    SciKit-Learn provides simple and efficient tools for data mining and
+    data analysis which are accessible to everybody, and reusable in
+    various contexts. It is built on NumPy, SciPy, and matplotlib.
