@@ -2,7 +2,11 @@ number: 22
 title: SciKit-Learn
 subtitle: A Python machine learning library
 date: 2019-05-31
-description: |
-    SciKit-Learn provides simple and efficient tools for data mining and
-    data analysis which are accessible to everybody, and reusable in
-    various contexts. It is built on NumPy, SciPy, and matplotlib.
+description: "SciKit-Learn provides simple and efficient tools for data mining and\n\
+  data analysis which are accessible to everybody, and reusable in\nvarious contexts.\
+  \ It is built on NumPy, SciPy, and matplotlib.\n"
+filename: episodes/scikit-learn.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd22.ogg
+ogg_size: 20933232
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd22.m4a
+m4a_size: 28510405
