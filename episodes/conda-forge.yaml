@@ -1,0 +1,11 @@
+number: 23
+title: conda-forge
+subtitle: Community, cross-platform packaging
+date: 2019-06-28
+description: |
+    conda-forge is community led collection of recipes, build infrastructure
+    and distributions. Conda-forge currently build conda packages for Linux,
+    Mac, Windows, ARM, and Power8 architectures. Conda-forge has 1400 members
+    in its GitHub organization and >7000 repositories. The conda-forge channel
+    has about 80 million downloads a month, and growing.
+    Conda-forge is an official NumFOCUS project.
