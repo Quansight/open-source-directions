@@ -2,10 +2,13 @@ number: 23
 title: conda-forge
 subtitle: Community, cross-platform packaging
 date: 2019-06-28
-description: |
-    conda-forge is community led collection of recipes, build infrastructure
-    and distributions. Conda-forge currently build conda packages for Linux,
-    Mac, Windows, ARM, and Power8 architectures. Conda-forge has 1400 members
-    in its GitHub organization and >7000 repositories. The conda-forge channel
-    has about 80 million downloads a month, and growing.
-    Conda-forge is an official NumFOCUS project.
+description: "conda-forge is community led collection of recipes, build infrastructure\n\
+  and distributions. Conda-forge currently build conda packages for Linux,\nMac, Windows,\
+  \ ARM, and Power8 architectures. Conda-forge has 1400 members\nin its GitHub organization\
+  \ and >7000 repositories. The conda-forge channel\nhas about 80 million downloads\
+  \ a month, and growing.\nConda-forge is an official NumFOCUS project.\n"
+filename: episodes/conda-forge.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd23.ogg
+ogg_size: 19762222
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd23.m4a
+m4a_size: 29481085
