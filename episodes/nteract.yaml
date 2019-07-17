@@ -1,0 +1,8 @@
+number: 24
+title: nteract
+subtitle: An ecosystem enabling front-ends and workflows on top of Jupyter
+date: 2019-07-12
+description: |
+    The nteract project is an ecosystem of open source tools to
+    enable people to build their own front-ends and workflows
+    on top of the Jupyter ecosystem.
