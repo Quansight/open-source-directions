@@ -2,7 +2,10 @@ number: 24
 title: nteract
 subtitle: An ecosystem enabling front-ends and workflows on top of Jupyter
 date: 2019-07-12
-description: |
-    The nteract project is an ecosystem of open source tools to
-    enable people to build their own front-ends and workflows
-    on top of the Jupyter ecosystem.
+description: "The nteract project is an ecosystem of open source tools to\nenable\
+  \ people to build their own front-ends and workflows\non top of the Jupyter ecosystem.\n"
+filename: episodes/nteract.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd24.ogg
+ogg_size: 17609648
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd24.m4a
+m4a_size: 24840473
