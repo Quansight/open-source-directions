@@ -1,0 +1,8 @@
+number: 25
+title: Binder
+subtitle: Turn a Git repo into a collection of interactive notebooks
+date: 2019-07-26
+description: |
+    Have a repository full of Jupyter notebooks? With Binder,
+    open those notebooks in an executable environment,
+    making your code immediately reproducible by anyone, anywhere.
