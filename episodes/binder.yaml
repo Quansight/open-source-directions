@@ -2,7 +2,11 @@ number: 25
 title: Binder
 subtitle: Turn a Git repo into a collection of interactive notebooks
 date: 2019-07-26
-description: |
-    Have a repository full of Jupyter notebooks? With Binder,
-    open those notebooks in an executable environment,
-    making your code immediately reproducible by anyone, anywhere.
+description: "Have a repository full of Jupyter notebooks? With Binder,\nopen those\
+  \ notebooks in an executable environment,\nmaking your code immediately reproducible\
+  \ by anyone, anywhere."
+filename: episodes/binder.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd25.ogg
+ogg_size: 16886853
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd25.m4a
+m4a_size: 29150875
