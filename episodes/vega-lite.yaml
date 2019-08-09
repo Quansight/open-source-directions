@@ -1,0 +1,9 @@
+number: 26
+title: Vega-Lite
+subtitle:  Visualization Grammars
+date: 2019-08-09
+description: |
+    Vega is a declarative format for creating, saving, and sharing
+    visualization designs. With Vega, visualizations are described
+    in JSON, and generate interactive views using either HTML5
+    Canvas or SVG.
