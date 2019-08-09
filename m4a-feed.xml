@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Thu Aug  1 22:56:24 2019</lastBuildDate>
+  <lastBuildDate>Fri Aug  9 16:43:26 2019</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,44 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    <item>
+      <title>Episode 26: Vega-Lite</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Fri Aug  9 00:00:00 2019</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-26</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>Vega is a declarative format for creating, saving, and sharing
+visualization designs. With Vega, visualizations are described
+in JSON, and generate interactive views using either HTML5
+Canvas or SVG.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd26.m4a">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>Vega is a declarative format for creating, saving, and sharing
+visualization designs. With Vega, visualizations are described
+in JSON, and generate interactive views using either HTML5
+Canvas or SVG.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd26.m4a" fileSize="29396571" type="audio/mp4" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>Visualization Grammars</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>Vega is a declarative format for creating, saving, and sharing
+visualization designs. With Vega, visualizations are described
+in JSON, and generate interactive views using either HTML5
+Canvas or SVG.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd26.m4a" length="29396571" type="audio/mp4" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd26.m4a</feedburner:origEnclosureLink>
+    </item>
     
     <item>
       <title>Episode 25: Binder</title>
