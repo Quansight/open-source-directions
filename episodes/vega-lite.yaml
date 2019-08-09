@@ -1,9 +1,12 @@
 number: 26
 title: Vega-Lite
-subtitle:  Visualization Grammars
+subtitle: Visualization Grammars
 date: 2019-08-09
-description: |
-    Vega is a declarative format for creating, saving, and sharing
-    visualization designs. With Vega, visualizations are described
-    in JSON, and generate interactive views using either HTML5
-    Canvas or SVG.
+description: "Vega is a declarative format for creating, saving, and sharing\nvisualization\
+  \ designs. With Vega, visualizations are described\nin JSON, and generate interactive\
+  \ views using either HTML5\nCanvas or SVG.\n"
+filename: episodes/vega-lite.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd26.ogg
+ogg_size: 19578190
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd26.m4a
+m4a_size: 29396571
