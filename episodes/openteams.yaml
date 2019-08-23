@@ -2,7 +2,10 @@ number: 27
 title: OpenTeams
 subtitle: Build your reputation and get paid to work on open source projects you love
 date: 2019-08-23
-description: |
-    OpenTeams brings together organizations using open source software
-    with creators and maintainers of the software to facilitate and
-    grow funding opportunities.
+description: "OpenTeams brings together organizations using open source software\n\
+  with creators and maintainers of the software to facilitate and\ngrow funding opportunities.\n"
+filename: episodes/openteams.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd27.ogg
+ogg_size: 16651845
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd27.m4a
+m4a_size: 24021521
