@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Fri Aug 23 17:15:41 2019</lastBuildDate>
+  <lastBuildDate>Fri Sep 27 17:24:32 2019</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,65 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    
+    <item>
+      <title>Episode 29: Panel</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Fri Sep 27 00:00:00 2019</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-29</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>Panel provides tools for easily composing widgets, plots, tables,
+and other viewable objects and controls into control panels, apps,
+and dashboards. Panel works with visualizations from Bokeh, Matplotlib,
+HoloViews, and other Python plotting libraries, making them instantly
+viewable either individually or when combined with interactive widgets
+that control them. Panel works equally well in Jupyter Notebooks,
+for creating quick data-exploration tools, or as standalone deployed
+apps and dashboards, and allows you to easily switch between those
+contexts as needed.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd29.m4a">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>Panel provides tools for easily composing widgets, plots, tables,
+and other viewable objects and controls into control panels, apps,
+and dashboards. Panel works with visualizations from Bokeh, Matplotlib,
+HoloViews, and other Python plotting libraries, making them instantly
+viewable either individually or when combined with interactive widgets
+that control them. Panel works equally well in Jupyter Notebooks,
+for creating quick data-exploration tools, or as standalone deployed
+apps and dashboards, and allows you to easily switch between those
+contexts as needed.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd29.m4a" fileSize="23805735" type="audio/mp4" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>A high-level app and dashboarding solution for Python</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>Panel provides tools for easily composing widgets, plots, tables,
+and other viewable objects and controls into control panels, apps,
+and dashboards. Panel works with visualizations from Bokeh, Matplotlib,
+HoloViews, and other Python plotting libraries, making them instantly
+viewable either individually or when combined with interactive widgets
+that control them. Panel works equally well in Jupyter Notebooks,
+for creating quick data-exploration tools, or as standalone deployed
+apps and dashboards, and allows you to easily switch between those
+contexts as needed.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd29.m4a" length="23805735" type="audio/mp4" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd29.m4a</feedburner:origEnclosureLink>
+    </item>
+    
+    
+    
+    
+    
     
     <item>
       <title>Episode 27: OpenTeams</title>
@@ -60,6 +119,8 @@ grow funding opportunities.
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd27.m4a" length="24021521" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd27.m4a</feedburner:origEnclosureLink>
     </item>
+    
+    
     
     <item>
       <title>Episode 26: Vega-Lite</title>
@@ -99,6 +160,8 @@ Canvas or SVG.
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd26.m4a</feedburner:origEnclosureLink>
     </item>
     
+    
+    
     <item>
       <title>Episode 25: Binder</title>
       <link>https://www.quansight.com/open-source-directions/</link>
@@ -130,6 +193,8 @@ making your code immediately reproducible by anyone, anywhere.</itunes:summary>
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd25.m4a" length="29150875" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd25.m4a</feedburner:origEnclosureLink>
     </item>
+    
+    
     
     <item>
       <title>Episode 24: nteract</title>
@@ -165,6 +230,8 @@ on top of the Jupyter ecosystem.
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd24.m4a" length="24840473" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd24.m4a</feedburner:origEnclosureLink>
     </item>
+    
+    
     
     <item>
       <title>Episode 23: conda-forge</title>
@@ -210,6 +277,8 @@ Conda-forge is an official NumFOCUS project.
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd23.m4a</feedburner:origEnclosureLink>
     </item>
     
+    
+    
     <item>
       <title>Episode 22: SciKit-Learn</title>
       <link>https://www.quansight.com/open-source-directions/</link>
@@ -244,6 +313,8 @@ various contexts. It is built on NumPy, SciPy, and matplotlib.
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd22.m4a" length="28510405" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd22.m4a</feedburner:origEnclosureLink>
     </item>
+    
+    
     
     <item>
       <title>Episode 21: xtensor/xframe</title>
@@ -280,6 +351,8 @@ xtensor requires a modern C++ compiler supporting C++14.
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd21.m4a</feedburner:origEnclosureLink>
     </item>
     
+    
+    
     <item>
       <title>Episode 20: Uarray</title>
       <link>https://www.quansight.com/open-source-directions/</link>
@@ -314,6 +387,8 @@ CORRECTION: In the episode Hameer implied moving data from GPUs to CPUs won’t 
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd20.m4a" length="21251037" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd20.m4a</feedburner:origEnclosureLink>
     </item>
+    
+    
     
     <item>
       <title>Episode 19: Pyodide</title>
@@ -350,6 +425,8 @@ While closely related to the iodide project, Pyodide may be used standalone in a
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd19.m4a</feedburner:origEnclosureLink>
     </item>
     
+    
+    
     <item>
       <title>Episode 18: PyMC3</title>
       <link>https://www.quansight.com/open-source-directions/</link>
@@ -384,6 +461,8 @@ Markov chain Monte Carlo (MCMC) and variational inference (VI).
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd18.m4a" length="28713658" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd18.m4a</feedburner:origEnclosureLink>
     </item>
+    
+    
     
     <item>
       <title>Episode 17: TensorFlow</title>
@@ -422,6 +501,8 @@ in ML and developers easily build and deploy ML powered applications.
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd17.m4a" length="28476333" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd17.m4a</feedburner:origEnclosureLink>
     </item>
+    
+    
     
     <item>
       <title>Episode 16: Chainer</title>
@@ -473,6 +554,8 @@ intuitive and easy to debug.
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd16.m4a</feedburner:origEnclosureLink>
     </item>
     
+    
+    
     <item>
       <title>Episode 15: Numba</title>
       <link>https://www.quansight.com/open-source-directions/</link>
@@ -523,6 +606,8 @@ one of the Numba decorators to a Python function is all that is needed.
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd15.m4a</feedburner:origEnclosureLink>
     </item>
     
+    
+    
     <item>
       <title>Episode 14: ITK</title>
       <link>https://www.quansight.com/open-source-directions/</link>
@@ -561,6 +646,8 @@ registering and segmenting multidimensional data.
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd14.m4a</feedburner:origEnclosureLink>
     </item>
     
+    
+    
     <item>
       <title>Episode 13: Jupyter Ecosystem</title>
       <link>https://www.quansight.com/open-source-directions/</link>
@@ -590,6 +677,8 @@ registering and segmenting multidimensional data.
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd13.m4a</feedburner:origEnclosureLink>
     </item>
     
+    
+    
     <item>
       <title>Episode 12: PySpark</title>
       <link>https://www.quansight.com/open-source-directions/</link>
@@ -615,6 +704,8 @@ registering and segmenting multidimensional data.
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd12.m4a" length="29060907" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd12.m4a</feedburner:origEnclosureLink>
     </item>
+    
+    
     
     <item>
       <title>Episode 11: Dask</title>
@@ -644,6 +735,8 @@ registering and segmenting multidimensional data.
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd11.m4a" length="23657793" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd11.m4a</feedburner:origEnclosureLink>
     </item>
+    
+    
     
     <item>
       <title>Episode 10: PyData/Sparse</title>
@@ -679,6 +772,8 @@ PyData/Sparse is well on its way to replacing scipy.sparse as the de-facto spars
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd10.m4a" length="20433618" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd10.m4a</feedburner:origEnclosureLink>
     </item>
+    
+    
     
     <item>
       <title>Episode 9: Datashader</title>
@@ -727,6 +822,8 @@ data and relationships of interest in a principled way.</itunes:summary>
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd9.m4a</feedburner:origEnclosureLink>
     </item>
     
+    
+    
     <item>
       <title>Episode 8: SciPy</title>
       <link>https://www.quansight.com/open-source-directions/</link>
@@ -773,6 +870,8 @@ upon by the world&#39;s leading scientists &amp; engineers.
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd8.m4a" length="24523031" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd8.m4a</feedburner:origEnclosureLink>
     </item>
+    
+    
     
     <item>
       <title>Episode 7: GeoViews</title>
@@ -830,6 +929,8 @@ while always being able to access the raw data underlying any plot.
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd7.m4a</feedburner:origEnclosureLink>
     </item>
     
+    
+    
     <item>
       <title>Episode 6: Intake</title>
       <link>https://www.quansight.com/open-source-directions/</link>
@@ -864,6 +965,8 @@ use to smooth the progression of data from developers and providers to users.
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd6.m4a" length="26226464" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd6.m4a</feedburner:origEnclosureLink>
     </item>
+    
+    
     
     <item>
       <title>Episode 5: CuPy</title>
@@ -902,6 +1005,8 @@ Blog Post: https://quansight.github.io/Episode-5-CuPy/
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd5.m4a" length="19205085" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd5.m4a</feedburner:origEnclosureLink>
     </item>
+    
+    
     
     <item>
       <title>Episode 4: PyViz</title>
@@ -947,6 +1052,8 @@ actually in PyViz, apart from the examples in the tutorials.</itunes:summary>
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd4.m4a</feedburner:origEnclosureLink>
     </item>
     
+    
+    
     <item>
       <title>Episode 3: SymPy</title>
       <link>https://www.quansight.com/open-source-directions/</link>
@@ -987,6 +1094,8 @@ All purely symbolic mathematical computation is in scope for SymPy.
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd3.m4a" length="40111179" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd3.m4a</feedburner:origEnclosureLink>
     </item>
+    
+    
     
     <item>
       <title>Episode 2: XND</title>
@@ -1065,6 +1174,8 @@ Plasma Store, Apache Arrow, and Tensor Comprehensions.
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd2.m4a</feedburner:origEnclosureLink>
     </item>
     
+    
+    
     <item>
       <title>Episode 1: Spyder</title>
       <link>https://www.quansight.com/open-source-directions/</link>
@@ -1112,6 +1223,8 @@ Beyond its many built-in features, its abilities can be extended even further vi
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd1.m4a</feedburner:origEnclosureLink>
     </item>
     
+    
+    
     <item>
       <title>Episode 0: Bokeh</title>
       <link>https://www.quansight.com/open-source-directions/</link>
@@ -1155,6 +1268,7 @@ data applications.
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd0.m4a" length="37821156" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd0.m4a</feedburner:origEnclosureLink>
     </item>
+    
     
     <copyright>Quansight, LLC</copyright>
     <media:credit role="author">Quansight, LLC</media:credit>
