@@ -2,13 +2,16 @@ number: 29
 title: Panel
 subtitle: A high-level app and dashboarding solution for Python
 date: 2019-09-27
-description: |
-    Panel provides tools for easily composing widgets, plots, tables,
-    and other viewable objects and controls into control panels, apps,
-    and dashboards. Panel works with visualizations from Bokeh, Matplotlib,
-    HoloViews, and other Python plotting libraries, making them instantly
-    viewable either individually or when combined with interactive widgets
-    that control them. Panel works equally well in Jupyter Notebooks,
-    for creating quick data-exploration tools, or as standalone deployed
-    apps and dashboards, and allows you to easily switch between those
-    contexts as needed.
+description: "Panel provides tools for easily composing widgets, plots, tables,\n\
+  and other viewable objects and controls into control panels, apps,\nand dashboards.\
+  \ Panel works with visualizations from Bokeh, Matplotlib,\nHoloViews, and other\
+  \ Python plotting libraries, making them instantly\nviewable either individually\
+  \ or when combined with interactive widgets\nthat control them. Panel works equally\
+  \ well in Jupyter Notebooks,\nfor creating quick data-exploration tools, or as standalone\
+  \ deployed\napps and dashboards, and allows you to easily switch between those\n\
+  contexts as needed.\n"
+filename: episodes/panel.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd29.ogg
+ogg_size: 15791319
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd29.m4a
+m4a_size: 23805735
