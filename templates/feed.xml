@@ -26,6 +26,8 @@
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
     {% for episode in episodes | reverse %}
+    {% if episode.title == "SKIP" %}
+    {% else %}
     {%- set audio_url = getattr(episode, audio_format + "_url") %}
     {%- set audio_size = getattr(episode, audio_format + "_size") %}
     <item>
@@ -53,6 +55,7 @@
       <enclosure url="{{ audio_url }}" length="{{ audio_size }}" type="{{ audio_mime_type }}" />
       <feedburner:origEnclosureLink>{{ audio_url }}</feedburner:origEnclosureLink>
     </item>
+    {% endif %}
     {% endfor %}
     <copyright>Quansight, LLC</copyright>
     <media:credit role="author">Quansight, LLC</media:credit>
