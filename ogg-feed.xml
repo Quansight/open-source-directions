@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Fri Sep 27 17:24:32 2019</lastBuildDate>
+  <lastBuildDate>Fri Oct 11 17:35:16 2019</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,70 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    
+    <item>
+      <title>Episode 30: UMAP</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Fri Oct 11 00:00:00 2019</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-30</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>Uniform Manifold Approximation and Projection (UMAP) is a dimension reduction
+technique that can be used for visualisation similarly to t-SNE, but also for
+general non-linear dimension reduction. The algorithm is founded on three assumptions
+about the data:
+
+1. The data is uniformly distributed on a Riemannian manifold;
+2. The Riemannian metric is locally constant (or can be approximated as such);
+3. The manifold is locally connected.
+
+From these assumptions it is possible to model the manifold with a fuzzy topological
+structure. The embedding is found by searching for a low dimensional projection
+of the data that has the closest possible equivalent fuzzy topological structure.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd30.ogg">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>Uniform Manifold Approximation and Projection (UMAP) is a dimension reduction
+technique that can be used for visualisation similarly to t-SNE, but also for
+general non-linear dimension reduction. The algorithm is founded on three assumptions
+about the data:
+
+1. The data is uniformly distributed on a Riemannian manifold;
+2. The Riemannian metric is locally constant (or can be approximated as such);
+3. The manifold is locally connected.
+
+From these assumptions it is possible to model the manifold with a fuzzy topological
+structure. The embedding is found by searching for a low dimensional projection
+of the data that has the closest possible equivalent fuzzy topological structure.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd30.ogg" fileSize="18875364" type="audio/ogg" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>Uniform Manifold Approximation and Projection</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>Uniform Manifold Approximation and Projection (UMAP) is a dimension reduction
+technique that can be used for visualisation similarly to t-SNE, but also for
+general non-linear dimension reduction. The algorithm is founded on three assumptions
+about the data:
+
+1. The data is uniformly distributed on a Riemannian manifold;
+2. The Riemannian metric is locally constant (or can be approximated as such);
+3. The manifold is locally connected.
+
+From these assumptions it is possible to model the manifold with a fuzzy topological
+structure. The embedding is found by searching for a low dimensional projection
+of the data that has the closest possible equivalent fuzzy topological structure.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd30.ogg" length="18875364" type="audio/ogg" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd30.ogg</feedburner:origEnclosureLink>
+    </item>
+    
     
     
     <item>
