@@ -1,0 +1,13 @@
+number: 31
+title: Econ-ARK
+subtitle: A toolkit for structural modeling of economic choices
+date: 2019-10-25
+description: |
+    The Econ-ARK project provides open-source toolkits for researchers
+    trying to understand how economic and social outcomes result from
+    the actions of heterogeneous individuals.
+
+    The primary goals of the project are to make entry into the world
+    of such modeling easy; to accelerate the development of this kind
+    of modeling for policy-making and academic research; and to increase
+    the openness, replicability, and interoperability of modeling tools.
