@@ -2,12 +2,14 @@ number: 31
 title: Econ-ARK
 subtitle: A toolkit for structural modeling of economic choices
 date: 2019-10-25
-description: |
-    The Econ-ARK project provides open-source toolkits for researchers
-    trying to understand how economic and social outcomes result from
-    the actions of heterogeneous individuals.
-
-    The primary goals of the project are to make entry into the world
-    of such modeling easy; to accelerate the development of this kind
-    of modeling for policy-making and academic research; and to increase
-    the openness, replicability, and interoperability of modeling tools.
+description: "The Econ-ARK project provides open-source toolkits for researchers\n\
+  trying to understand how economic and social outcomes result from\nthe actions of\
+  \ heterogeneous individuals.\n\nThe primary goals of the project are to make entry\
+  \ into the world\nof such modeling easy; to accelerate the development of this kind\n\
+  of modeling for policy-making and academic research; and to increase\nthe openness,\
+  \ replicability, and interoperability of modeling tools.\n"
+filename: episodes/econ-ark.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd31.ogg
+ogg_size: 16632995
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd31.m4a
+m4a_size: 27796651
