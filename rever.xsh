@@ -144,7 +144,7 @@ def upload_to_digital_ocean():
 
 def download_google_slide_as_png(service, presentation_id, slide, filename):
     """Downloads a google slide as large PNG file."""
-    j = service.presentations().pages().getThumbnail(presentation_id, slide['objectId'],
+    j = service.presentations().pages().getThumbnail(presentationId=presentation_id, pageObjectId=slide['objectId'],
         thumbnailProperties_mimeType="PNG", thumbnailProperties_thumbnailSize="LARGE").execute()
     $[curl -L @(j['contentUrl']) > @(filename)]
 
