@@ -43,6 +43,7 @@ def load_episodes():
             episode = Namespace(**yaml.load(f))
         episode.filename = fname
         episodes.append(episode)
+    import pdb; pdb.set_trace()
     episodes.sort(key=lambda x: x.number)
     EPISODES = episodes
     return EPISODES
