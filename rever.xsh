@@ -43,7 +43,6 @@ def load_episodes():
             episode = Namespace(**yaml.load(f))
         episode.filename = fname
         episodes.append(episode)
-    import pdb; pdb.set_trace()
     episodes.sort(key=lambda x: x.number)
     EPISODES = episodes
     return EPISODES
@@ -143,10 +142,10 @@ def upload_to_digital_ocean():
         s3cmd put --config=@(cfgfile) --acl-public @(fname) s3://open-source-directions/podcast/
 
 
-def download_google_slide_as_png(slide, filename):
+def download_google_slide_as_png(service, presentation_id, slide, filename):
     """Downloads a google slide as large PNG file."""
-    import pdb; pdb.set_trace()
-    j = slide.getThumbnail(presentationId, pageObjectId, thumbnailProperties_mimeType=None, thumbnailProperties_thumbnailSize=None)
+    j = service.presentations().pages().getThumbnail(presentation_id, slide['objectId'],
+        thumbnailProperties_mimeType="PNG", thumbnailProperties_thumbnailSize="LARGE").execute()
     $[curl -L @(j['contentUrl']) > @(filename)]
 
 
@@ -162,9 +161,15 @@ def make_google_slides_service():
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
+        elif not os.path.isfile('google-creds.json'):
+            raise ValueError(
+                "Could not find Google credetials. Please copy the contents of "
+                "https://docs.google.com/document/d/10iyE_AOKEfz1F10IGHF5NC6Cw0Ob4ccF_IyXNLcWHj4"
+                " into the file 'google-creds.json' in this directory."
+            )
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                'credentials.json', SCOPES)
+                'google-creds.json', scopes)
             creds = flow.run_local_server(port=0)
         # Save the credentials for the next run
         with open(token_file, 'wb') as f:
@@ -184,7 +189,7 @@ def download_slides():
     episodes = load_episodes()
     episode = episodes[int($VERSION)]
     # next get the slide ids
-    m = SLIDES_URL_RE.match(episode['slides'])
+    m = SLIDES_URL_RE.match(episode.slides)
     if m is None:
         raise ValueError(str(episode) + " has invalid 'slides' entry.")
     presentation_id = m.group(1)
@@ -194,8 +199,8 @@ def download_slides():
     slides = presentation.get('slides')
     # download the slides
     for name, slide in zip(["intro", "outro"], slides):
-        fname = f"{$REVER_DIR}/{name}-{episode['number']}.png"
-        download_google_slide_as_png(slide, fname)
+        fname = f"{$REVER_DIR}/{name}-{episode.number}.png"
+        download_google_slide_as_png(service, presentation_id, slide, fname)
 
 
 $ACTIVITIES = [
