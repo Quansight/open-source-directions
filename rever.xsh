@@ -1,8 +1,15 @@
 import os
+import re
 import json
+import pickle
 
 from rever.activity import activity
 from xonsh.tools import print_color
+
+from googleapiclient.discovery import build
+from google_auth_oauthlib.flow import InstalledAppFlow
+from google.auth.transport.requests import Request
+
 
 $GITHUB_ORG = 'Quansight'
 $PROJECT = $GITHUB_REPO = 'open-source-directions'
@@ -135,20 +142,38 @@ def upload_to_digital_ocean():
         s3cmd put --config=@(cfgfile) --acl-public @(fname) s3://open-source-directions/podcast/
 
 
-def download_google_slide_as_png(presentation_id, page_id, filename):
+def download_google_slide_as_png(slide, filename):
     """Downloads a google slide as large PNG file."""
-    url = (
-        f'https://slides.googleapis.com/v1/presentations/{presentation_id}/pages/{page_id}/thumbnail?'
-        'thumbnailProperties.mimeType=PNG&thumbnailProperties.thumbnailSize=LARGE&'
-        'key=[YOUR_API_KEY]'
-    )
-    s = $(curl @(url) \
-        --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
-        --header 'Accept: application/json' \
-        --compressed \
-    )
-    j = json.loads(s)
+    import pdb; pdb.set_trace()
+    j = slide.getThumbnail(presentationId, pageObjectId, thumbnailProperties_mimeType=None, thumbnailProperties_thumbnailSize=None)
     $[curl -L @(j['contentUrl']) > @(filename)]
+
+
+def make_google_slides_service():
+    """Google Slides interface."""
+    scopes = ['https://www.googleapis.com/auth/presentations.readonly']
+    creds = None
+    token_file = os.path.join($REVER_DIR, 'slides-token.pkl')
+    if os.path.exists(token_file):
+        with open(token_file, 'rb') as f:
+            creds = pickle.load(f)
+    # If there are no (valid) credentials available, let the user log in.
+    if not creds or not creds.valid:
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(Request())
+        else:
+            flow = InstalledAppFlow.from_client_secrets_file(
+                'credentials.json', SCOPES)
+            creds = flow.run_local_server(port=0)
+        # Save the credentials for the next run
+        with open(token_file, 'wb') as f:
+            pickle.dump(creds, f)
+
+    service = build('slides', 'v1', credentials=creds)
+    return service
+
+
+SLIDES_URL_RE = re.compile("https://docs.google.com/presentation/d/([^/]+)")
 
 
 @activity
@@ -158,21 +183,18 @@ def download_slides():
     episodes = load_episodes()
     episode = episodes[int($VERSION)]
     # next get the slide ids
-    url = (
-        f'https://slides.googleapis.com/v1/presentations/{presentation_id}?key=[YOUR_API_KEY]'
-    )
-    s = $(
-        curl @(url) \
-        --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
-        --header 'Accept: application/json' \
-        --compressed \
-    )
-    j = json.loads(s)
-    slide_ids = [slide["objectId"] for slide in j["slides"]]
+    m = SLIDES_URL_RE.match(episode['slides'])
+    if m is None:
+        raise ValueError(str(episode) + " has invalid 'slides' entry.")
+    presentation_id = m.group(1)
+    # Call the Slides API
+    service = make_google_slides_service()
+    presentation = service.presentations().get(presentationId=presentation_id).execute()
+    slides = presentation.get('slides')
     # download the slides
-    for name, slide_id in zip(["intro", "outro"], slide_ids):
+    for name, slide in zip(["intro", "outro"], slides):
         fname = f"{$REVER_DIR}/{name}-{episode['number']}.png"
-        download_google_slide_as_png(presentation_id, slide_id, fname)
+        download_google_slide_as_png(slide, fname)
 
 
 $ACTIVITIES = [

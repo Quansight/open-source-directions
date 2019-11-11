@@ -14,5 +14,8 @@ dependencies:
   - lazyasd
   - rever
   - jinja2
+  - curl
+  - google-api-python-client
+  - google-auth-oauthlib
 prefix: /home/scopatz/miniconda/envs/osd
 
