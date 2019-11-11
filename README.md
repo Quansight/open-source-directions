@@ -32,3 +32,17 @@ We will need to grab the repo and install it.
 OK! Now we are ready to start releasing episodes!
 
 ## Releasing an episode
+
+**Step 1:** The first step in releasing an episode is to write the show
+notes. Go into the `episodes/` directory and copy the temnplate to a
+file with the project name, open the new file, and edit the details.
+Then commit it and push up!
+
+```sh
+(osd) $ cd episodes
+(osd) $ cp TEMPLATE.yaml <proj>.yaml
+(osd) $ # edit <proj>.yaml
+(osd) $ git add <proj>.yaml
+(osd) $ git commit -am "added metadata for <proj>"
+(osd) $ git push
+```

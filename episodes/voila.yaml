@@ -1,0 +1,14 @@
+number: 32
+title: Voila
+subtitle: Turns Jupyter notebooks into standalone web applications
+date: 2019-11-08
+description: |
+    Voilà turns Jupyter notebooks into standalone web applications.
+
+    Unlike the usual HTML-converted notebooks, each user connecting to the Voilà tornado
+    application gets a dedicated Jupyter kernel which can execute the callbacks to changes
+    in Jupyter interactive widgets.
+
+    By default, Voilà disallows execute requests from the front-end, preventing execution
+    of arbitrary code. By default, Voilà runs with the strip_source option, which strips out
+    the input cells from the rendered notebook.
