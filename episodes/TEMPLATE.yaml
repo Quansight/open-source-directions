@@ -2,5 +2,6 @@ number:
 title:  # Project Name
 subtitle:  # Short Descr
 date: 2019-MM-DD
+slides:  # URL of intro/outro slides on google drive
 description: |
     # text

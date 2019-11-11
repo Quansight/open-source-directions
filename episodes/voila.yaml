@@ -2,6 +2,7 @@ number: 32
 title: Voila
 subtitle: Turns Jupyter notebooks into standalone web applications
 date: 2019-11-08
+slides: https://docs.google.com/presentation/d/1dBkhrYnxJvj0m_SL-2Yae9CTjX67pheS-iWrdDBdzI4
 description: |
     Voilà turns Jupyter notebooks into standalone web applications.
 
