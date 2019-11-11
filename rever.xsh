@@ -1,4 +1,5 @@
 import os
+import json
 
 from rever.activity import activity
 from xonsh.tools import print_color
@@ -134,11 +135,53 @@ def upload_to_digital_ocean():
         s3cmd put --config=@(cfgfile) --acl-public @(fname) s3://open-source-directions/podcast/
 
 
-$ACTIVITIES = ['edit',
-               'upload_to_digital_ocean',
-               'update_episode_data',
-               'feed',
-               'tag',
-               'push_tag',
-              ]
+def download_google_slide_as_png(presentation_id, page_id, filename):
+    """Downloads a google slide as large PNG file."""
+    url = (
+        f'https://slides.googleapis.com/v1/presentations/{presentation_id}/pages/{page_id}/thumbnail?'
+        'thumbnailProperties.mimeType=PNG&thumbnailProperties.thumbnailSize=LARGE&'
+        'key=[YOUR_API_KEY]'
+    )
+    s = $(curl @(url) \
+        --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+        --header 'Accept: application/json' \
+        --compressed \
+    )
+    j = json.loads(s)
+    $[curl -L @(j['contentUrl']) > @(filename)]
+
+
+@activity
+def download_slides():
+    """Downloads intro/outro slides from google drive as PNG files."""
+    # first get the presentation ID from the metadata
+    episodes = load_episodes()
+    episode = episodes[int($VERSION)]
+    # next get the slide ids
+    url = (
+        f'https://slides.googleapis.com/v1/presentations/{presentation_id}?key=[YOUR_API_KEY]'
+    )
+    s = $(
+        curl @(url) \
+        --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+        --header 'Accept: application/json' \
+        --compressed \
+    )
+    j = json.loads(s)
+    slide_ids = [slide["objectId"] for slide in j["slides"]]
+    # download the slides
+    for name, slide_id in zip(["intro", "outro"], slide_ids):
+        fname = f"{$REVER_DIR}/{name}-{episode['number']}.png"
+        download_google_slide_as_png(presentation_id, slide_id, fname)
+
+
+$ACTIVITIES = [
+    'download_slides',
+    'edit',
+    'upload_to_digital_ocean',
+    'update_episode_data',
+    'feed',
+    'tag',
+    'push_tag',
+]
 $ACTIVITIES_MARK = ['mark']
