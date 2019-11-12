@@ -203,8 +203,16 @@ def download_slides():
         download_google_slide_as_png(service, presentation_id, slide, fname)
 
 
+@activity
+def download_raw_video():
+    """Downloads the video (from livestorm)"""
+    episodes = load_episodes()
+    episode = episodes[int($VERSION)]
+
+
 $ACTIVITIES = [
     'download_slides',
+    'download_raw_video',
     'edit',
     'upload_to_digital_ocean',
     'update_episode_data',
