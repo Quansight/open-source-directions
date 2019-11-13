@@ -8,8 +8,8 @@ if 'UMDONE_CACHE_DIR' not in ${...}:
 if 'SILENCE_REDUCED_TO' not in ${...}:
     $SILENCE_REDUCED_TO = 0.2
 
-transcript_file = os.path.join($REVER_DIR, 'umdone', 'aws', 'osd' + $VERSION + '-raw.json')
+transcript_file = os.path.join('rever', 'umdone', 'aws', 'osd' + $VERSION + '-raw.json')
 
-![aws-transcribe umdone $REVER_DIR/osd$VERSION-raw.mp3 --transcript-file @(transcript_file)]
+![aws-transcribe umdone rever/osd$VERSION-raw.mp3 --transcript-file @(transcript_file)]
 
 ![echo done transcribing @(transcript_file)]

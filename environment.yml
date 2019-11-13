@@ -17,5 +17,6 @@ dependencies:
   - curl
   - google-api-python-client
   - google-auth-oauthlib
+  - awscli
 prefix: /home/scopatz/miniconda/envs/osd
 

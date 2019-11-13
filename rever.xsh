@@ -122,6 +122,14 @@ def edit():
 
 
 @activity
+def transcribe_raw():
+    """Transcribes a raw audio file."""
+    __xonsh__.commands_cache.threadable_predictors['umdone'] = lambda *a, **k: False
+    episodes = load_episodes()
+    $[umdone transcribe-raw.xsh]
+
+
+@activity
 def upload_to_digital_ocean():
     """Uploads finished audio files to digital ocean"""
     cfgfile = os.path.join($REVER_CONFIG_DIR, 'osd.s3cfg')
@@ -209,15 +217,27 @@ def download_raw_video():
     """Downloads the video (from livestorm)"""
     episodes = load_episodes()
     episode = episodes[int($VERSION)]
-    fname = os.path.join($REVER_DIR, f'raw-{$VERSION}.mp4')
+    fname = os.path.join($REVER_DIR, f'osd{$VERSION}-raw.mp4')
     with open(fname, 'wb') as f:
         for b in stream_url_progress(episode.raw_video):
             f.write(b)
 
 
+@activity
+def raw_mp3():
+    """Converts the video file to a raw MP3 locally."""
+    episodes = load_episodes()
+    episode = episodes[int($VERSION)]
+    mp3 = os.path.join($REVER_DIR, f'osd{$VERSION}-raw.mp3')
+    mp4 = os.path.join($REVER_DIR, f'osd{$VERSION}-raw.mp4')
+    ![ffmpeg -y -i @(mp4) @(mp3)]
+
+
 $ACTIVITIES = [
     'download_slides',
     'download_raw_video',
+    'raw_mp3',
+    'transcribe_raw',
     'edit',
     'upload_to_digital_ocean',
     'update_episode_data',
