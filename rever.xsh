@@ -4,6 +4,7 @@ import json
 import pickle
 
 from rever.activity import activity
+from rever.tools import stream_url_progress
 from xonsh.tools import print_color
 
 from googleapiclient.discovery import build
@@ -208,6 +209,10 @@ def download_raw_video():
     """Downloads the video (from livestorm)"""
     episodes = load_episodes()
     episode = episodes[int($VERSION)]
+    fname = os.path.join($REVER_DIR, f'raw-{$VERSION}.mp4')
+    with open(fname, 'wb') as f:
+        for b in stream_url_progress(episode.raw_video):
+            f.write(b)
 
 
 $ACTIVITIES = [
