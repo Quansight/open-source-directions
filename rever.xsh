@@ -233,6 +233,28 @@ def raw_mp3():
     ![ffmpeg -y -i @(mp4) @(mp3)]
 
 
+@activity
+def render_video():
+    """Renders MP4 video"""
+    episodes = load_episodes()
+    from jinja2 import Environment, FileSystemLoader, select_autoescape
+    env = Environment(
+        loader=FileSystemLoader('templates'),
+        autoescape=select_autoescape(['html', 'xml'])
+    )
+    sh_file = os.path.join($REVER_DIR, f'osd{$VERSION}-video.sh')
+    mlt_file = sh_file + ".mlt"
+    webm_file = os.path.join($REVER_DIR, f'osd{$VERSION}.webm')
+    ctx = dict(
+        knenlive_render=$(which kdenlive_render),
+        melt=$(which melt),
+        mlt_file=mlt_file,
+    )
+    sh_template = env.get_template('render-osd-video.sh')
+
+    sh = template.render(**ctx)
+
+
 $ACTIVITIES = [
     'download_slides',
     'download_raw_video',
