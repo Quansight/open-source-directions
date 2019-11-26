@@ -24,6 +24,8 @@ AUDIO_MIME_TYPES = {
     'ogg': 'audio/ogg',
     'm4a': 'audio/mp4',
     }
+INTRO_WAV_URL = "https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/intro-jingle.wav"
+OUTRO_WAV_URL = "https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/outro-jingle.wav"
 
 __xonsh__.commands_cache.threadable_predictors['umdone'] = lambda *a, **k: False
 
@@ -237,22 +239,53 @@ def raw_mp3():
 def render_video():
     """Renders MP4 video"""
     episodes = load_episodes()
+    episode = episodes[int($VERSION)]
     from jinja2 import Environment, FileSystemLoader, select_autoescape
+
+    # set up jinja
     env = Environment(
         loader=FileSystemLoader('templates'),
         autoescape=select_autoescape(['html', 'xml'])
     )
     sh_file = os.path.join($REVER_DIR, f'osd{$VERSION}-video.sh')
     mlt_file = sh_file + ".mlt"
-    webm_file = os.path.join($REVER_DIR, f'osd{$VERSION}.webm')
+    intro_wav = os.path.join($REVER_DIR, 'intro-jingle.wav')
+    outro_wav = os.path.join($REVER_DIR, 'outro-jingle.wav')
     ctx = dict(
-        knenlive_render=$(which kdenlive_render),
+        cwd=$PWD,
+        episode=episode,
+        kdenlive_render=$(which kdenlive_render),
         melt=$(which melt),
         mlt_file=mlt_file,
+        raw_mp4=os.path.join($REVER_DIR, f'osd{$VERSION}-raw.mp4'),
+        webm_file=os.path.join($REVER_DIR, f'osd{$VERSION}.webm'),
+        intro_slide=os.path.join($REVER_DIR, f'intro-{$VERSION}.png'),
+        outro_slide=os.path.join($REVER_DIR, f'outro-{$VERSION}.png'),
+        intro_wav=intro_wav,
+        outro_wav=outro_wav,
     )
-    sh_template = env.get_template('render-osd-video.sh')
+    # download intro/outro sounds
+    if not os.path.isfile(intro_wav):
+        with open(intro_wav, 'wb') as f:
+            for b in stream_url_progress(INTRO_WAV_URL):
+                f.write(b)
+    if not os.path.isfile(outro_wav):
+        with open(outro_wav, 'wb') as f:
+            for b in stream_url_progress(OUTRO_WAV_URL):
+                f.write(b)
 
-    sh = template.render(**ctx)
+    # create render script
+    sh_template = env.get_template('render-osd-video.sh')
+    sh = sh_template.render(**ctx)
+    with open(sh_file, 'w') as f:
+        f.write(sh)
+
+    # fill in render template
+    mlt_template = env.get_template('render-osd-video.sh.mlt')
+    mlt = mlt_template.render(**ctx)
+    with open(mlt_file, 'w') as f:
+        f.write(mlt)
+
 
 
 $ACTIVITIES = [
@@ -260,6 +293,7 @@ $ACTIVITIES = [
     'download_raw_video',
     'raw_mp3',
     'transcribe_raw',
+    'render_video',
     'edit',
     'upload_to_digital_ocean',
     'update_episode_data',

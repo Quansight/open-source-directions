@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<mlt title="Anonymous Submission" LC_NUMERIC="en_US.UTF-8" producer="main bin" version="6.12.0" root="/home/scopatz">
+<mlt title="{{ episode.title }}" LC_NUMERIC="en_US.UTF-8" producer="main bin" version="6.12.0" root="{{ cwd }}">
  <profile frame_rate_num="30000" sample_aspect_num="1" display_aspect_den="9" colorspace="709" progressive="1" description="HD 1080p 29.97 fps" display_aspect_num="16" frame_rate_den="1001" width="1920" height="1080" sample_aspect_den="1"/>
  <producer id="1" in="0" out="149">
   <property name="length">150</property>
   <property name="eof">pause</property>
-  <property name="resource">Downloads/Panel Slides (1).png</property>
+  <property name="resource">{{ outro_slide }}</property>
   <property name="ttl">25</property>
   <property name="aspect_ratio">1</property>
   <property name="progressive">1</property>
@@ -20,7 +20,7 @@
  <producer id="2" in="0" out="149">
   <property name="length">150</property>
   <property name="eof">pause</property>
-  <property name="resource">Downloads/Panel Slides.png</property>
+  <property name="resource">{{ intro_slide }}</property>
   <property name="ttl">25</property>
   <property name="aspect_ratio">1</property>
   <property name="progressive">1</property>
@@ -36,7 +36,7 @@
  <producer title="Anonymous Submission" id="3" in="0" out="93696">
   <property name="length">00:52:06;11</property>
   <property name="eof">pause</property>
-  <property name="resource">Downloads/open-source-directions-ep-29-panel-replay-2019-09-27.mp4</property>
+  <property name="resource">{{ raw_mp4 }}</property>
   <property name="audio_index">1</property>
   <property name="video_index">0</property>
   <property name="mute_on_pause">1</property>
@@ -88,7 +88,7 @@
  <producer title="Anonymous Submission" id="4" in="0" out="114">
   <property name="length">00:00:03;25</property>
   <property name="eof">pause</property>
-  <property name="resource">Downloads/intro-jingle.wav</property>
+  <property name="resource">{{ intro_wav }}</property>
   <property name="audio_index">0</property>
   <property name="video_index">-1</property>
   <property name="mute_on_pause">1</property>
@@ -118,7 +118,7 @@
  <producer title="Anonymous Submission" id="5" in="0" out="157">
   <property name="length">00:00:05;08</property>
   <property name="eof">pause</property>
-  <property name="resource">Downloads/outro-jingle.wav</property>
+  <property name="resource">{{ outro_wav }}</property>
   <property name="audio_index">0</property>
   <property name="video_index">-1</property>
   <property name="mute_on_pause">1</property>
@@ -213,7 +213,7 @@
  <producer title="Anonymous Submission" id="4_playlist2" in="0" out="114">
   <property name="length">00:00:03;25</property>
   <property name="eof">pause</property>
-  <property name="resource">Downloads/intro-jingle.wav</property>
+  <property name="resource">{{ intro_wav }}</property>
   <property name="audio_index">0</property>
   <property name="video_index">-1</property>
   <property name="mute_on_pause">1</property>
@@ -244,7 +244,7 @@
  <producer title="Anonymous Submission" id="5_playlist2" in="0" out="157">
   <property name="length">00:00:05;08</property>
   <property name="eof">pause</property>
-  <property name="resource">Downloads/outro-jingle.wav</property>
+  <property name="resource">{{ outro_wav }}</property>
   <property name="audio_index">0</property>
   <property name="video_index">-1</property>
   <property name="mute_on_pause">1</property>
@@ -288,7 +288,7 @@
  <producer title="Anonymous Submission" id="3_playlist4" in="0" out="93696">
   <property name="length">00:52:06;11</property>
   <property name="eof">pause</property>
-  <property name="resource">Downloads/open-source-directions-ep-29-panel-replay-2019-09-27.mp4</property>
+  <property name="resource">{{ raw_mp4 }}</property>
   <property name="audio_index">1</property>
   <property name="video_index">0</property>
   <property name="mute_on_pause">1</property>
