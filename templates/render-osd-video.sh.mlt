@@ -190,7 +190,7 @@
   <property name="kdenlive:docproperties.rendertcoverlay">0</property>
   <property name="kdenlive:docproperties.rendertctype">0</property>
   <property name="kdenlive:docproperties.rendertwopass">0</property>
-  <property name="kdenlive:docproperties.renderurl">osd29.webm</property>
+  <property name="kdenlive:docproperties.renderurl">{{ webm_file }}</property>
   <property name="kdenlive:docproperties.renderzone">0</property>
   <property name="xml_retain">1</property>
   <entry producer="1" in="0" out="149"/>
