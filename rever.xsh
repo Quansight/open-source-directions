@@ -235,56 +235,65 @@ def raw_mp3():
     ![ffmpeg -y -i @(mp4) @(mp3)]
 
 
+def fps(filename):
+    """Gets the frames-per-second of a video file"""
+    s = $(ffprobe -select_streams v -show_streams @(filename) e>o | grep avg_frame_rate)
+    rate =
+
+
 @activity
 def render_video():
     """Renders MP4 video"""
     episodes = load_episodes()
     episode = episodes[int($VERSION)]
-    from jinja2 import Environment, FileSystemLoader, select_autoescape
+    #from jinja2 import Environment, FileSystemLoader, select_autoescape
+
+    ![ffmpeg -i $REVER_DIR/intro-$VERSION.png -i $REVER_DIR/intro-jingle.wav $REVER_DIR/intro-$VERSION.mp4]
+    ![ffmpeg -i $REVER_DIR/outro-$VERSION.png -i $REVER_DIR/outro-jingle.wav $REVER_DIR/outro-$VERSION.mp4]
 
     # set up jinja
-    env = Environment(
-        loader=FileSystemLoader('templates'),
-        autoescape=select_autoescape(['html', 'xml'])
-    )
-    sh_file = os.path.join($REVER_DIR, f'osd{$VERSION}-video.sh')
-    mlt_file = sh_file + ".mlt"
-    intro_wav = os.path.join($REVER_DIR, 'intro-jingle.wav')
-    outro_wav = os.path.join($REVER_DIR, 'outro-jingle.wav')
-    ctx = dict(
-        cwd=$PWD,
-        episode=episode,
-        kdenlive_render=$(which kdenlive_render),
-        melt=$(which melt),
-        mlt_file=mlt_file,
-        raw_mp4=os.path.join($REVER_DIR, f'osd{$VERSION}-raw.mp4'),
-        webm_file=os.path.join($REVER_DIR, f'osd{$VERSION}.webm'),
-        intro_slide=os.path.join($REVER_DIR, f'intro-{$VERSION}.png'),
-        outro_slide=os.path.join($REVER_DIR, f'outro-{$VERSION}.png'),
-        intro_wav=intro_wav,
-        outro_wav=outro_wav,
-    )
+    #env = Environment(
+    #    loader=FileSystemLoader('templates'),
+    #    autoescape=select_autoescape(['html', 'xml'])
+    #)
+    #sh_file = os.path.join($REVER_DIR, f'osd{$VERSION}-video.sh')
+    #mlt_file = sh_file + ".mlt"
+    #intro_wav = os.path.join($REVER_DIR, 'intro-jingle.wav')
+    #outro_wav = os.path.join($REVER_DIR, 'outro-jingle.wav')
+    #ctx = dict(
+    #    cwd=$PWD,
+    #    episode=episode,
+    #    kdenlive_render=$(which kdenlive_render),
+    #    melt=$(which melt),
+    #    mlt_file=mlt_file,
+    #    raw_mp4=os.path.join($REVER_DIR, f'osd{$VERSION}-raw.mp4'),
+    #    webm_file=os.path.join($REVER_DIR, f'osd{$VERSION}.webm'),
+    #    intro_slide=os.path.join($REVER_DIR, f'intro-{$VERSION}.png'),
+    #    outro_slide=os.path.join($REVER_DIR, f'outro-{$VERSION}.png'),
+    #    intro_wav=intro_wav,
+    #    outro_wav=outro_wav,
+    #)
     # download intro/outro sounds
-    if not os.path.isfile(intro_wav):
-        with open(intro_wav, 'wb') as f:
-            for b in stream_url_progress(INTRO_WAV_URL):
-                f.write(b)
-    if not os.path.isfile(outro_wav):
-        with open(outro_wav, 'wb') as f:
-            for b in stream_url_progress(OUTRO_WAV_URL):
-                f.write(b)
+    #if not os.path.isfile(intro_wav):
+    #    with open(intro_wav, 'wb') as f:
+    #        for b in stream_url_progress(INTRO_WAV_URL):
+    #            f.write(b)
+    #if not os.path.isfile(outro_wav):
+    #    with open(outro_wav, 'wb') as f:
+    #        for b in stream_url_progress(OUTRO_WAV_URL):
+    #            f.write(b)
 
     # create render script
-    sh_template = env.get_template('render-osd-video.sh')
-    sh = sh_template.render(**ctx)
-    with open(sh_file, 'w') as f:
-        f.write(sh)
+    #sh_template = env.get_template('render-osd-video.sh')
+    #sh = sh_template.render(**ctx)
+    #with open(sh_file, 'w') as f:
+    #    f.write(sh)
 
     # fill in render template
-    mlt_template = env.get_template('render-osd-video.sh.mlt')
-    mlt = mlt_template.render(**ctx)
-    with open(mlt_file, 'w') as f:
-        f.write(mlt)
+    #mlt_template = env.get_template('render-osd-video.sh.mlt')
+    #mlt = mlt_template.render(**ctx)
+    #with open(mlt_file, 'w') as f:
+    #    f.write(mlt)
 
 
 
