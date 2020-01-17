@@ -247,7 +247,7 @@ def word_matches(word, content):
     return any([a['content'].lower() == content for a in word['alternatives']])
 
 
-def find_episode_start():
+def find_episode_start_end():
     transcript_file = os.path.join('rever', 'umdone', 'aws', 'osd' + $VERSION + '-raw.json')
     with open(transcript_file) as f:
         j = json.load(f)
@@ -259,11 +259,12 @@ def find_episode_start():
             continue
         # check that the rest of the phrase follows
         if all([word_matches(words[n+m], phrase[m]) for m in range(1, len(phrase))]):
-            start_time = word["start_time"]
+            start_time = float(word["start_time"])
             break
     else:
         raise ValueError(f"Could not find phrase {phrase!r} in transcript!")
-    return start_time
+    end_time = float(words[-1]["end_time"])
+    return start_time, end_time
 
 
 @activity
@@ -271,7 +272,6 @@ def render_video():
     """Renders MP4 video"""
     episodes = load_episodes()
     episode = episodes[int($VERSION)]
-    #from jinja2 import Environment, FileSystemLoader, select_autoescape
 
     # make intro & outro movies
     ![ffmpeg -y -i $REVER_DIR/intro-$VERSION.png -i $REVER_DIR/intro-jingle.wav $REVER_DIR/intro-$VERSION.mp4]
@@ -281,57 +281,12 @@ def render_video():
     intro_fps = fps(f"{$REVER_DIR}/intro-{$VERSION}.mp4")
     outro_fps = fps(f"{$REVER_DIR}/outro-{$VERSION}.mp4")
     raw_fps = fps(f"{$REVER_DIR}/osd{$VERSION}-raw.mp4")
-    raw_start = find_episode_start()
-    ![melt $REVER_DIR/intro-$VERSION.mp4 out=@(2*intro_fps) \
-           $REVER_DIR/outro-$VERSION.mp4 in=@((raw_start-0.5)*int(raw_fps)) -mix @(raw_fps) -mixer luma \
+    raw_start, raw_end = find_episode_start_end()
+    ![melt $REVER_DIR/intro-$VERSION.mp4 out=@(int(2.75*intro_fps)) \
+           $REVER_DIR/osd$VERSION-raw.mp4 in=@(int((raw_start-0.5)*raw_fps)) out=@(int(raw_end*raw_fps)) -mix @(raw_fps) -mixer luma \
            $REVER_DIR/outro-$VERSION.mp4 out=@(4*outro_fps) -mix @(outro_fps) -mixer luma \
            -consumer avformat:$REVER_DIR/osd$VERSION.mp4 \
     ]
-
-    # set up jinja
-    #env = Environment(
-    #    loader=FileSystemLoader('templates'),
-    #    autoescape=select_autoescape(['html', 'xml'])
-    #)
-    #sh_file = os.path.join($REVER_DIR, f'osd{$VERSION}-video.sh')
-    #mlt_file = sh_file + ".mlt"
-    #intro_wav = os.path.join($REVER_DIR, 'intro-jingle.wav')
-    #outro_wav = os.path.join($REVER_DIR, 'outro-jingle.wav')
-    #ctx = dict(
-    #    cwd=$PWD,
-    #    episode=episode,
-    #    kdenlive_render=$(which kdenlive_render),
-    #    melt=$(which melt),
-    #    mlt_file=mlt_file,
-    #    raw_mp4=os.path.join($REVER_DIR, f'osd{$VERSION}-raw.mp4'),
-    #    webm_file=os.path.join($REVER_DIR, f'osd{$VERSION}.webm'),
-    #    intro_slide=os.path.join($REVER_DIR, f'intro-{$VERSION}.png'),
-    #    outro_slide=os.path.join($REVER_DIR, f'outro-{$VERSION}.png'),
-    #    intro_wav=intro_wav,
-    #    outro_wav=outro_wav,
-    #)
-    # download intro/outro sounds
-    #if not os.path.isfile(intro_wav):
-    #    with open(intro_wav, 'wb') as f:
-    #        for b in stream_url_progress(INTRO_WAV_URL):
-    #            f.write(b)
-    #if not os.path.isfile(outro_wav):
-    #    with open(outro_wav, 'wb') as f:
-    #        for b in stream_url_progress(OUTRO_WAV_URL):
-    #            f.write(b)
-
-    # create render script
-    #sh_template = env.get_template('render-osd-video.sh')
-    #sh = sh_template.render(**ctx)
-    #with open(sh_file, 'w') as f:
-    #    f.write(sh)
-
-    # fill in render template
-    #mlt_template = env.get_template('render-osd-video.sh.mlt')
-    #mlt = mlt_template.render(**ctx)
-    #with open(mlt_file, 'w') as f:
-    #    f.write(mlt)
-
 
 
 $ACTIVITIES = [
