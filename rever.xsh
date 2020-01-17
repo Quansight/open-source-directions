@@ -237,8 +237,10 @@ def raw_mp3():
 
 def fps(filename):
     """Gets the frames-per-second of a video file"""
-    s = $(ffprobe -select_streams v -show_streams @(filename) e>o | grep avg_frame_rate)
-    rate =
+    s = $(ffprobe -print_format json -select_streams v -show_streams @(filename))
+    j = json.loads(s)
+    frames, _, seconds = j["streams"][0]["avg_frame_rate"].partition("/")
+    return int(int(frames) / int(seconds))
 
 
 @activity
@@ -248,8 +250,19 @@ def render_video():
     episode = episodes[int($VERSION)]
     #from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-    ![ffmpeg -i $REVER_DIR/intro-$VERSION.png -i $REVER_DIR/intro-jingle.wav $REVER_DIR/intro-$VERSION.mp4]
-    ![ffmpeg -i $REVER_DIR/outro-$VERSION.png -i $REVER_DIR/outro-jingle.wav $REVER_DIR/outro-$VERSION.mp4]
+    # make intro & outro movies
+    ![ffmpeg -y -i $REVER_DIR/intro-$VERSION.png -i $REVER_DIR/intro-jingle.wav $REVER_DIR/intro-$VERSION.mp4]
+    ![ffmpeg -y -i $REVER_DIR/outro-$VERSION.png -i $REVER_DIR/outro-jingle.wav $REVER_DIR/outro-$VERSION.mp4]
+
+    # move movies into one another
+    intro_fps = fps(f"{$REVER_DIR}/intro-{$VERSION}.mp4")
+    outro_fps = fps(f"{$REVER_DIR}/outro-{$VERSION}.mp4")
+    raw_fps = fps(f"{$REVER_DIR}/osd{$VERSION}-raw.mp4")
+    ![melt $REVER_DIR/intro-$VERSION.mp4 out=@(2*intro_fps) \
+           $REVER_DIR/outro-$VERSION.mp4 in=@(*int(raw_fps)) -mix @(raw_fps) -mixer luma \
+           $REVER_DIR/outro-$VERSION.mp4 out=@(4*outro_fps) -mix @(outro_fps) -mixer luma \
+           -consumer avformat:$REVER_DIR/osd$VERSION.mp4 \
+    ]
 
     # set up jinja
     #env = Environment(
