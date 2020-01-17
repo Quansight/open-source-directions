@@ -1,15 +1,22 @@
 import os
 import re
 import json
+import time
 import pickle
+import socket
+import http.client
 
 from rever.activity import activity
 from rever.tools import stream_url_progress
 from xonsh.tools import print_color
 
+import googleapiclient.errors
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
+
+import httplib2
+import apiclient.http
 
 
 $GITHUB_ORG = 'Quansight'
@@ -289,12 +296,84 @@ def render_video():
     ]
 
 
+YOUTUBE_RETRIABLE_EXCEPTIONS = [
+    socket.error, IOError, httplib2.HttpLib2Error, http.client.NotConnected,
+    http.client.IncompleteRead, http.client.ImproperConnectionState,
+    http.client.CannotSendRequest, http.client.CannotSendHeader,
+    http.client.ResponseNotReady, http.client.BadStatusLine,
+    googleapiclient.errors.HttpError,
+]
+
+
+def _upload_to_request(request, progress_callback):
+    """Upload a video to a Youtube request. Return video ID."""
+    while 1:
+        status, response = request.next_chunk()
+        if status and progress_callback:
+            progress_callback(status.total_size, status.resumable_progress)
+        if response:
+            if "id" in response:
+                return response['id']
+            else:
+                raise KeyError("Expected field 'id' not found in response")
+
+
+def _video_upload(resource, path, body, chunksize=4*1024*1024,
+        progress_callback=None, max_retries=10):
+    """Upload video to Youtube. Return video ID."""
+    body_keys = ",".join(body.keys())
+    media = apiclient.http.MediaFileUpload(path, chunksize=chunksize,
+        resumable=True, mimetype="application/octet-stream")
+    request = resource.videos().insert(part=body_keys, body=body, media_body=media)
+    upload_fun = lambda: _upload_to_request(request, progress_callback)
+    return lib.retriable_exceptions(upload_fun,
+        YOUTUBE_RETRIABLE_EXCEPTIONS, max_retries=max_retries)
+
+
+@activity
+def youtube_upload():
+    """Uploads the rendered video to YouTube"""
+    episodes = load_episodes()
+    episode = episodes[int($VERSION)]
+
+    # setup request
+    tags = [
+        "Data Science",
+        episode.title,
+        "Open Source",
+        "Data Engineering",
+        "Scientific Computing",
+    ]
+    body = dict(
+        snippet=dict(
+            title=f"Episode {episode.number}: {episode.title} - Open Source Directions hosted by Quansight",
+            description=episode.description,
+            tags=tags,
+            categoryId=28, # Science & Technology
+            defaultLanguage="en",
+            defaultAudioLanguage="en",
+        ),
+        status=dict(
+            privacyStatus="public",
+            embeddable=True,
+            license="youtube",
+        )
+        recordingDetails=dict(
+            recordingDate=episode.date,
+        )
+    )
+
+    # upload video
+    _video_upload(resource, f"{$REVER_DIR}/osd{$VERSION}.mp4", body, progress_callback=None)
+
+
 $ACTIVITIES = [
     'download_slides',
     'download_raw_video',
     'raw_mp3',
     'transcribe_raw',
     'render_video',
+    'youtube_upload',
     'edit',
     'upload_to_digital_ocean',
     'update_episode_data',
