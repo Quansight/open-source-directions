@@ -243,6 +243,29 @@ def fps(filename):
     return int(int(frames) / int(seconds))
 
 
+def word_matches(word, content):
+    return any([a['content'].lower() == content for a in word['alternatives']])
+
+
+def find_episode_start():
+    transcript_file = os.path.join('rever', 'umdone', 'aws', 'osd' + $VERSION + '-raw.json')
+    with open(transcript_file) as f:
+        j = json.load(f)
+    words = [i for i in j['results']['items'] if i['type'] == 'pronunciation']
+    phrase = ["hello", "the", "internet"]
+    for n, word in enumerate(words):
+        # find first word in phrase
+        if not word_matches(word, phrase[0]):
+            continue
+        # check that the rest of the phrase follows
+        if all([word_matches(words[n+m], phrase[m]) for m in range(1, len(phrase))]):
+            start_time = word["start_time"]
+            break
+    else:
+        raise ValueError(f"Could not find phrase {phrase!r} in transcript!")
+    return start_time
+
+
 @activity
 def render_video():
     """Renders MP4 video"""
@@ -258,8 +281,9 @@ def render_video():
     intro_fps = fps(f"{$REVER_DIR}/intro-{$VERSION}.mp4")
     outro_fps = fps(f"{$REVER_DIR}/outro-{$VERSION}.mp4")
     raw_fps = fps(f"{$REVER_DIR}/osd{$VERSION}-raw.mp4")
+    raw_start = find_episode_start()
     ![melt $REVER_DIR/intro-$VERSION.mp4 out=@(2*intro_fps) \
-           $REVER_DIR/outro-$VERSION.mp4 in=@(*int(raw_fps)) -mix @(raw_fps) -mixer luma \
+           $REVER_DIR/outro-$VERSION.mp4 in=@((raw_start-0.5)*int(raw_fps)) -mix @(raw_fps) -mixer luma \
            $REVER_DIR/outro-$VERSION.mp4 out=@(4*outro_fps) -mix @(outro_fps) -mixer luma \
            -consumer avformat:$REVER_DIR/osd$VERSION.mp4 \
     ]
