@@ -11,6 +11,11 @@ from rever.tools import stream_url_progress
 from xonsh.tools import print_color
 
 import googleapiclient.errors
+from apiclient.errors import HttpError
+from apiclient.http import MediaFileUpload
+from oauth2client.client import flow_from_clientsecrets
+from oauth2client.file import Storage
+from oauth2client.tools import argparser, run_flow
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
@@ -167,11 +172,10 @@ def download_google_slide_as_png(service, presentation_id, slide, filename):
     $[curl -L @(j['contentUrl']) > @(filename)]
 
 
-def make_google_slides_service():
+def make_google_creds(name, scopes):
     """Google Slides interface."""
-    scopes = ['https://www.googleapis.com/auth/presentations.readonly']
     creds = None
-    token_file = os.path.join($REVER_DIR, 'slides-token.pkl')
+    token_file = os.path.join($REVER_DIR, name + '-token.pkl')
     if os.path.exists(token_file):
         with open(token_file, 'rb') as f:
             creds = pickle.load(f)
@@ -192,7 +196,13 @@ def make_google_slides_service():
         # Save the credentials for the next run
         with open(token_file, 'wb') as f:
             pickle.dump(creds, f)
+    return creds
 
+
+def make_google_slides_service():
+    """Google Slides interface."""
+    scopes = ['https://www.googleapis.com/auth/presentations.readonly']
+    creds = make_google_creds("slides", scopes)
     service = build('slides', 'v1', credentials=creds)
     return service
 
@@ -303,6 +313,56 @@ YOUTUBE_RETRIABLE_EXCEPTIONS = [
     http.client.ResponseNotReady, http.client.BadStatusLine,
     googleapiclient.errors.HttpError,
 ]
+#CLIENT_SECRETS_FILE = "client_secrets.json"
+CLIENT_SECRETS_FILE = "google-creds.json"
+YOUTUBE_UPLOAD_SCOPE = "https://www.googleapis.com/auth/youtube.upload"
+YOUTUBE_API_SERVICE_NAME = "youtube"
+YOUTUBE_API_VERSION = "v3"
+MISSING_CLIENT_SECRETS_MESSAGE = """
+WARNING: Please configure OAuth 2.0
+
+To make this sample run you will need to populate the client_secrets.json file
+found at:
+
+   {0}
+
+with information from the API Console
+https://console.developers.google.com/
+
+For more information about the client_secrets.json file format, please visit:
+https://developers.google.com/api-client-library/python/guide/aaa_client_secrets
+""".format(os.path.abspath(os.path.join(os.path.dirname(__file__),
+                                   CLIENT_SECRETS_FILE)))
+
+
+def _get_yt_auth_code(authorize_url):
+    """Show authorization URL and return the code the user wrote."""
+    message = "Check this link in your browser: {0}".format(authorize_url)
+    sys.stderr.write(message + "\n")
+    return input("Enter verification code: ")
+
+
+def _youtube_handler():
+    """Return the API Youtube object."""
+    flow = flow_from_clientsecrets(CLIENT_SECRETS_FILE,
+        scope=YOUTUBE_UPLOAD_SCOPE,
+        message=MISSING_CLIENT_SECRETS_MESSAGE)
+
+    storage = Storage("google-creds.json")
+    credentials = storage.get()
+
+    if credentials is None or credentials.invalid:
+        credentials = run_flow(flow, storage, _get_yt_auth_code)
+
+    return build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION,
+        http=credentials.authorize(httplib2.Http()))
+
+def make_google_youtube_service():
+    """YouTube interface."""
+    scopes = ['https://www.googleapis.com/auth/presentations.readonly']
+    creds = make_google_creds("youtube", YOUTUBE_UPLOAD_SCOPE)
+    service = build('youtube', 'v3', credentials=creds)
+    return service
 
 
 def _upload_to_request(request, progress_callback):
@@ -357,14 +417,15 @@ def youtube_upload():
             privacyStatus="public",
             embeddable=True,
             license="youtube",
-        )
+        ),
         recordingDetails=dict(
             recordingDate=episode.date,
         )
     )
 
     # upload video
-    _video_upload(resource, f"{$REVER_DIR}/osd{$VERSION}.mp4", body, progress_callback=None)
+    youtube = make_google_youtube_service()
+    #_video_upload(youtube, f"{$REVER_DIR}/osd{$VERSION}.mp4", body, progress_callback=None)
 
 
 $ACTIVITIES = [

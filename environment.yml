@@ -19,5 +19,6 @@ dependencies:
   - google-auth-oauthlib
   - awscli
   - httplib2
+  - oauth2client
 prefix: /home/scopatz/miniconda/envs/osd
 
