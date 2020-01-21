@@ -434,7 +434,7 @@ def youtube_upload():
             license="youtube",
         ),
         recordingDetails=dict(
-            recordingDate=episode.date,
+            recordingDate=episode.date.isoformat(),
         )
     )
 
