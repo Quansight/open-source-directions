@@ -1,5 +1,6 @@
 import os
 import re
+import sys
 import json
 import time
 import pickle
@@ -377,15 +378,45 @@ def _upload_to_request(request, progress_callback):
                 raise KeyError("Expected field 'id' not found in response")
 
 
-def _video_upload(resource, path, body, chunksize=4*1024*1024,
+def retriable_exceptions(fun, retriable_exceptions, max_retries=None):
+    """Run function and retry on some exceptions (with exponential backoff)."""
+    retry = 0
+    while True:
+        try:
+            return fun()
+        except tuple(retriable_exceptions) as exc:
+            retry += 1
+            if type(exc) not in retriable_exceptions:
+                raise exc
+            # we want to retry 5xx errors only
+            elif type(exc) == googleapiclient.errors.HttpError and exc.resp.status < 500:
+                raise exc
+            elif max_retries is not None and retry > max_retries:
+                print("[Retryable errors] Retry limit reached", file=sys.stderr)
+                raise exc
+            else:
+                seconds = random.uniform(0, 2**retry)
+                message = ("[Retryable error {current_retry}/{total_retries}] " +
+                    "{error_type} ({error_msg}). Wait {wait_time} seconds").format(
+                    current_retry=retry,
+                    total_retries=max_retries or "-",
+                    error_type=type(exc).__name__,
+                    error_msg=str(exc) or "-",
+                    wait_time="%.1f" % seconds,
+                )
+                print(message, file=sys.stderr)
+                time.sleep(seconds)
+
+
+def _video_upload(youtube, path, body, chunksize=4*1024*1024,
         progress_callback=None, max_retries=10):
     """Upload video to Youtube. Return video ID."""
     body_keys = ",".join(body.keys())
     media = apiclient.http.MediaFileUpload(path, chunksize=chunksize,
         resumable=True, mimetype="application/octet-stream")
-    request = resource.videos().insert(part=body_keys, body=body, media_body=media)
+    request = youtube.videos().insert(part=body_keys, body=body, media_body=media)
     upload_fun = lambda: _upload_to_request(request, progress_callback)
-    return lib.retriable_exceptions(upload_fun,
+    return retriable_exceptions(upload_fun,
         YOUTUBE_RETRIABLE_EXCEPTIONS, max_retries=max_retries)
 
 
