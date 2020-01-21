@@ -335,31 +335,30 @@ https://developers.google.com/api-client-library/python/guide/aaa_client_secrets
                                    CLIENT_SECRETS_FILE)))
 
 
-def _get_yt_auth_code(authorize_url):
-    """Show authorization URL and return the code the user wrote."""
-    message = "Check this link in your browser: {0}".format(authorize_url)
-    sys.stderr.write(message + "\n")
-    return input("Enter verification code: ")
+#def _get_yt_auth_code(authorize_url):
+#    """Show authorization URL and return the code the user wrote."""
+#    message = "Check this link in your browser: {0}".format(authorize_url)
+#    sys.stderr.write(message + "\n")
+#    return input("Enter verification code: ")
 
 
-def _youtube_handler():
-    """Return the API Youtube object."""
-    flow = flow_from_clientsecrets(CLIENT_SECRETS_FILE,
-        scope=YOUTUBE_UPLOAD_SCOPE,
-        message=MISSING_CLIENT_SECRETS_MESSAGE)
-
-    storage = Storage("google-creds.json")
-    credentials = storage.get()
-
-    if credentials is None or credentials.invalid:
-        credentials = run_flow(flow, storage, _get_yt_auth_code)
-
-    return build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION,
-        http=credentials.authorize(httplib2.Http()))
+#def _youtube_handler():
+#    """Return the API Youtube object."""
+#    flow = flow_from_clientsecrets(CLIENT_SECRETS_FILE,
+#        scope=YOUTUBE_UPLOAD_SCOPE,
+#        message=MISSING_CLIENT_SECRETS_MESSAGE)
+#
+#    storage = Storage("google-creds.json")
+#    credentials = storage.get()
+#
+#    if credentials is None or credentials.invalid:
+#        credentials = run_flow(flow, storage, _get_yt_auth_code)
+#
+#    return build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION,
+#        http=credentials.authorize(httplib2.Http()))
 
 def make_google_youtube_service():
     """YouTube interface."""
-    scopes = ['https://www.googleapis.com/auth/presentations.readonly']
     creds = make_google_creds("youtube", YOUTUBE_UPLOAD_SCOPE)
     service = build('youtube', 'v3', credentials=creds)
     return service
@@ -388,6 +387,22 @@ def _video_upload(resource, path, body, chunksize=4*1024*1024,
     upload_fun = lambda: _upload_to_request(request, progress_callback)
     return lib.retriable_exceptions(upload_fun,
         YOUTUBE_RETRIABLE_EXCEPTIONS, max_retries=max_retries)
+
+
+def get_youtube_playlist(youtube, title):
+    """Return users's playlist ID by title (None if not found)"""
+    playlists = youtube.playlists()
+    request = playlists.list(mine=True, part="id,snippet")
+    current_encoding = locale.getpreferredencoding()
+
+    while request:
+        results = request.execute()
+        for item in results["items"]:
+            t = item.get("snippet", {}).get("title")
+            existing_playlist_title = (t.encode(current_encoding) if hasattr(t, 'decode') else t)
+            if existing_playlist_title == title:
+                return item.get("id")
+        request = playlists.list_next(request, results)
 
 
 @activity
@@ -425,7 +440,23 @@ def youtube_upload():
 
     # upload video
     youtube = make_google_youtube_service()
-    #_video_upload(youtube, f"{$REVER_DIR}/osd{$VERSION}.mp4", body, progress_callback=None)
+    video_id = _video_upload(youtube, f"{$REVER_DIR}/osd{$VERSION}.mp4", body, progress_callback=None)
+    print(f"Video at: https://www.youtube.com/watch?v={video_id}")
+    # add thumbnail
+    youtube.thumbnails().set(videoId=video_id, media_body=f"{$REVER_DIR}/intro-{$VERSION}.png").execute()
+    print("Thumbnail set")
+    # add to playlist
+    playlist_id = get_youtube_playlist(youtube, "Open Source Directions")
+    youtube.playlistItems().insert(part="snippet", body={
+        "snippet": {
+            "playlistId": playlist_id,
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": video_id,
+            }
+        }
+    }).execute()
+    print("Added to Open Source Directions playlist")
 
 
 $ACTIVITIES = [
