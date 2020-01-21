@@ -317,7 +317,12 @@ YOUTUBE_RETRIABLE_EXCEPTIONS = [
 ]
 #CLIENT_SECRETS_FILE = "client_secrets.json"
 CLIENT_SECRETS_FILE = "google-creds.json"
-YOUTUBE_UPLOAD_SCOPE = "https://www.googleapis.com/auth/youtube.upload"
+YOUTUBE_UPLOAD_SCOPE = [
+    "https://www.googleapis.com/auth/youtube.upload",
+    #"https://www.googleapis.com/auth/youtubepartner",
+    #"https://www.googleapis.com/auth/youtubepartner-channel-audit",
+    "https://www.googleapis.com/auth/youtube",
+    ]
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 MISSING_CLIENT_SECRETS_MESSAGE = """
