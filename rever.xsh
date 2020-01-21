@@ -5,6 +5,7 @@ import json
 import time
 import pickle
 import socket
+import datetime
 import http.client
 
 from rever.activity import activity
@@ -465,7 +466,8 @@ def youtube_upload():
             license="youtube",
         ),
         recordingDetails=dict(
-            recordingDate=episode.date.isoformat(),
+            # videos are recorded at Noon US/Eastern, or 5 PM UTC
+            recordingDate=datetime.datetime.combine(episode.date, datetime.time(17)).isoformat(timespec='milliseconds') + "-05:00",
         )
     )
 
