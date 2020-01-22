@@ -316,54 +316,11 @@ YOUTUBE_RETRIABLE_EXCEPTIONS = [
     http.client.ResponseNotReady, http.client.BadStatusLine,
     googleapiclient.errors.HttpError,
 ]
-#CLIENT_SECRETS_FILE = "client_secrets.json"
-CLIENT_SECRETS_FILE = "google-creds.json"
 YOUTUBE_UPLOAD_SCOPE = [
     "https://www.googleapis.com/auth/youtube.upload",
-    #"https://www.googleapis.com/auth/youtubepartner",
-    #"https://www.googleapis.com/auth/youtubepartner-channel-audit",
     "https://www.googleapis.com/auth/youtube",
     ]
-YOUTUBE_API_SERVICE_NAME = "youtube"
-YOUTUBE_API_VERSION = "v3"
-MISSING_CLIENT_SECRETS_MESSAGE = """
-WARNING: Please configure OAuth 2.0
 
-To make this sample run you will need to populate the client_secrets.json file
-found at:
-
-   {0}
-
-with information from the API Console
-https://console.developers.google.com/
-
-For more information about the client_secrets.json file format, please visit:
-https://developers.google.com/api-client-library/python/guide/aaa_client_secrets
-""".format(os.path.abspath(os.path.join(os.path.dirname(__file__),
-                                   CLIENT_SECRETS_FILE)))
-
-
-#def _get_yt_auth_code(authorize_url):
-#    """Show authorization URL and return the code the user wrote."""
-#    message = "Check this link in your browser: {0}".format(authorize_url)
-#    sys.stderr.write(message + "\n")
-#    return input("Enter verification code: ")
-
-
-#def _youtube_handler():
-#    """Return the API Youtube object."""
-#    flow = flow_from_clientsecrets(CLIENT_SECRETS_FILE,
-#        scope=YOUTUBE_UPLOAD_SCOPE,
-#        message=MISSING_CLIENT_SECRETS_MESSAGE)
-#
-#    storage = Storage("google-creds.json")
-#    credentials = storage.get()
-#
-#    if credentials is None or credentials.invalid:
-#        credentials = run_flow(flow, storage, _get_yt_auth_code)
-#
-#    return build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION,
-#        http=credentials.authorize(httplib2.Http()))
 
 def make_google_youtube_service():
     """YouTube interface."""
