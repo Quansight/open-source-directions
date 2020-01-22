@@ -5,6 +5,7 @@ import json
 import time
 import pickle
 import socket
+import locale
 import datetime
 import http.client
 
