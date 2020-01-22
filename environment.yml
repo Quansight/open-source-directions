@@ -20,5 +20,6 @@ dependencies:
   - awscli
   - httplib2<0.16
   - oauth2client
+  - s3cmd
 prefix: /home/scopatz/miniconda/envs/osd
 
