@@ -146,9 +146,8 @@ def transcribe_raw():
     $[umdone transcribe-raw.xsh]
 
 
-@activity
-def upload_to_digital_ocean():
-    """Uploads finished audio files to digital ocean"""
+def upload_files_to_digital_ocean(files):
+    """Uploads files to digital ocean"""
     cfgfile = os.path.join($REVER_CONFIG_DIR, 'osd.s3cfg')
     if not os.path.exists(cfgfile):
         msg = ("Digital ocean s3cmd config file does not exist. Please run: \n\n"
@@ -162,10 +161,23 @@ def upload_to_digital_ocean():
                "For more information, please see: https://www.digitalocean.com/docs/spaces/resources/s3cmd/\n"
                "\n")
         raise RuntimeError(msg)
-    files = g`osd$VERSION.*`
     for fname in files:
         print_color('{YELLOW}Uploading ' + fname + '{NO_COLOR}')
         s3cmd put --config=@(cfgfile) --acl-public @(fname) s3://open-source-directions/podcast/
+
+
+@activity
+def upload_to_digital_ocean():
+    """Uploads finished audio files to digital ocean"""
+    files = g`osd$VERSION.*`
+    upload_files_to_digital_ocean(files)
+
+
+@activity
+def upload_raw_to_digital_ocean():
+    """Uploads raw audio files to digital ocean"""
+    files = g`$REVER_DIR/podcast-raw/osd$VERSION-raw.*`
+    upload_files_to_digital_ocean(files)
 
 
 def download_google_slide_as_png(service, presentation_id, slide, filename):
@@ -455,13 +467,24 @@ def youtube_upload():
     print("Added to Open Source Directions playlist")
 
 
+@activity
+def strip_audio():
+    """Strips audio stream out of the generated video file"""
+    os.makedirs(f"{$REVER_DIR}/podcast-raw", exist_ok=True)
+    ![ffmpeg -y -i $REVER_DIR/osd$VERSION.mp4 $REVER_DIR/podcast-raw/osd$VERSION-raw.mp3]
+
+
 $ACTIVITIES = [
+    # video generation
     'download_slides',
     'download_raw_video',
     'raw_mp3',
     'transcribe_raw',
     'render_video',
     'youtube_upload',
+    # podcast generation
+    'strip_audio',
+    'upload_raw_to_digital_ocean',
     'edit',
     'upload_to_digital_ocean',
     'update_episode_data',
