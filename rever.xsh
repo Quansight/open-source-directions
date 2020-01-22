@@ -275,6 +275,14 @@ def fps(filename):
     return int(int(frames) / int(seconds))
 
 
+def bit_rate(filename):
+    """Gets the bit rate of a video file"""
+    s = $(ffprobe -print_format json -select_streams v -show_streams @(filename))
+    j = json.loads(s)
+    br = j["streams"][0]["bit_rate"]
+    return int(br)
+
+
 def word_matches(word, content):
     return any([a['content'].lower() == content for a in word['alternatives']])
 
@@ -313,11 +321,12 @@ def render_video():
     intro_fps = fps(f"{$REVER_DIR}/intro-{$VERSION}.mp4")
     outro_fps = fps(f"{$REVER_DIR}/outro-{$VERSION}.mp4")
     raw_fps = fps(f"{$REVER_DIR}/osd{$VERSION}-raw.mp4")
+    raw_vb = bit_rate(f"{$REVER_DIR}/osd{$VERSION}-raw.mp4")
     raw_start, raw_end = find_episode_start_end()
-    ![melt $REVER_DIR/intro-$VERSION.mp4 out=@(int(2.75*intro_fps)) \
+    ![melt -progress $REVER_DIR/intro-$VERSION.mp4 out=@(int(2.75*intro_fps)) \
            $REVER_DIR/osd$VERSION-raw.mp4 in=@(int((raw_start-0.5)*raw_fps)) out=@(int(raw_end*raw_fps)) -mix @(raw_fps) -mixer luma \
            $REVER_DIR/outro-$VERSION.mp4 out=@(4*outro_fps) -mix @(outro_fps) -mixer luma \
-           -consumer avformat:$REVER_DIR/osd$VERSION.mp4 \
+           -consumer avformat:$REVER_DIR/osd$VERSION.mp4 vb=@(raw_vb) \
     ]
 
 
