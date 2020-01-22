@@ -4,13 +4,15 @@ subtitle: Turns Jupyter notebooks into standalone web applications
 date: 2019-11-08
 slides: https://docs.google.com/presentation/d/1dBkhrYnxJvj0m_SL-2Yae9CTjX67pheS-iWrdDBdzI4
 raw_video: https://cdn.livestorm.co/uploads/media/file/e58e0c6e-6503-4ad7-96ad-0909a6c2e3b4/6501a254-e015-440b-bf4e-4807f9f1d85e.mp4?v=1573236726
-description: |
-    Voilà turns Jupyter notebooks into standalone web applications.
-
-    Unlike the usual HTML-converted notebooks, each user connecting to the Voilà tornado
-    application gets a dedicated Jupyter kernel which can execute the callbacks to changes
-    in Jupyter interactive widgets.
-
-    By default, Voilà disallows execute requests from the front-end, preventing execution
-    of arbitrary code. By default, Voilà runs with the strip_source option, which strips out
-    the input cells from the rendered notebook.
+description: "Voilà turns Jupyter notebooks into standalone web applications.\n\n\
+  Unlike the usual HTML-converted notebooks, each user connecting to the Voilà tornado\n\
+  application gets a dedicated Jupyter kernel which can execute the callbacks to changes\n\
+  in Jupyter interactive widgets.\n\nBy default, Voilà disallows execute requests\
+  \ from the front-end, preventing execution\nof arbitrary code. By default, Voilà\
+  \ runs with the strip_source option, which strips out\nthe input cells from the\
+  \ rendered notebook.\n"
+filename: episodes/voila.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd32.ogg
+ogg_size: 17477863
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd32.m4a
+m4a_size: 26215258
