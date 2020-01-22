@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Fri Oct 25 15:23:46 2019</lastBuildDate>
+  <lastBuildDate>Wed Jan 22 15:11:36 2020</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,61 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    
+    <item>
+      <title>Episode 32: Voila</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Fri Nov  8 00:00:00 2019</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-32</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>Voilà turns Jupyter notebooks into standalone web applications.
+
+Unlike the usual HTML-converted notebooks, each user connecting to the Voilà tornado
+application gets a dedicated Jupyter kernel which can execute the callbacks to changes
+in Jupyter interactive widgets.
+
+By default, Voilà disallows execute requests from the front-end, preventing execution
+of arbitrary code. By default, Voilà runs with the strip_source option, which strips out
+the input cells from the rendered notebook.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd32.ogg">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>Voilà turns Jupyter notebooks into standalone web applications.
+
+Unlike the usual HTML-converted notebooks, each user connecting to the Voilà tornado
+application gets a dedicated Jupyter kernel which can execute the callbacks to changes
+in Jupyter interactive widgets.
+
+By default, Voilà disallows execute requests from the front-end, preventing execution
+of arbitrary code. By default, Voilà runs with the strip_source option, which strips out
+the input cells from the rendered notebook.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd32.ogg" fileSize="17477863" type="audio/ogg" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>Turns Jupyter notebooks into standalone web applications</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>Voilà turns Jupyter notebooks into standalone web applications.
+
+Unlike the usual HTML-converted notebooks, each user connecting to the Voilà tornado
+application gets a dedicated Jupyter kernel which can execute the callbacks to changes
+in Jupyter interactive widgets.
+
+By default, Voilà disallows execute requests from the front-end, preventing execution
+of arbitrary code. By default, Voilà runs with the strip_source option, which strips out
+the input cells from the rendered notebook.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd32.ogg" length="17477863" type="audio/ogg" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd32.ogg</feedburner:origEnclosureLink>
+    </item>
+    
     
     
     <item>
