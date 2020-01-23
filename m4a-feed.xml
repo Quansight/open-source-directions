@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Wed Jan 22 15:11:36 2020</lastBuildDate>
+  <lastBuildDate>Thu Jan 23 11:25:48 2020</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,49 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    
+    <item>
+      <title>Episode 33: stdlib</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Fri Nov 22 00:00:00 2019</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-33</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>stdlib (&#34;standard lib&#34;) is a standard library for JavaScript and Node.js, with an
+emphasis on numerical and scientific computing applications. The library provides
+a collection of robust, high performance libraries for mathematics, statistics,
+data processing, streams, and more and includes many of the utilities you would
+expect from a standard library.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd33.m4a">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>stdlib (&#34;standard lib&#34;) is a standard library for JavaScript and Node.js, with an
+emphasis on numerical and scientific computing applications. The library provides
+a collection of robust, high performance libraries for mathematics, statistics,
+data processing, streams, and more and includes many of the utilities you would
+expect from a standard library.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd33.m4a" fileSize="26763867" type="audio/mp4" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>The Standard library for JavaScript</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>stdlib (&#34;standard lib&#34;) is a standard library for JavaScript and Node.js, with an
+emphasis on numerical and scientific computing applications. The library provides
+a collection of robust, high performance libraries for mathematics, statistics,
+data processing, streams, and more and includes many of the utilities you would
+expect from a standard library.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd33.m4a" length="26763867" type="audio/mp4" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd33.m4a</feedburner:origEnclosureLink>
+    </item>
+    
     
     
     <item>
