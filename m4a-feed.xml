@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Thu Jan 23 14:11:33 2020</lastBuildDate>
+  <lastBuildDate>Thu Jan 23 16:40:34 2020</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -28,6 +28,64 @@
     
     
     <item>
+      <title>Episode 34: Stumpy</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Fri Jan 10 00:00:00 2020</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-34</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>STUMPY is a powerful and scalable library that efficiently computes something called
+the matrix profile, which can be used for a variety of
+time series data mining tasks such as: pattern/motif
+(approximately repeated subsequences within a longer time series) discovery,
+anomaly/novelty (discord) discovery,
+shapelet discovery,
+semantic segmentation,
+density estimation,
+time series chains (temporally ordered set of subsequence patterns),
+and more!
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd34.m4a">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>STUMPY is a powerful and scalable library that efficiently computes something called
+the matrix profile, which can be used for a variety of
+time series data mining tasks such as: pattern/motif
+(approximately repeated subsequences within a longer time series) discovery,
+anomaly/novelty (discord) discovery,
+shapelet discovery,
+semantic segmentation,
+density estimation,
+time series chains (temporally ordered set of subsequence patterns),
+and more!
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd34.m4a" fileSize="26763867" type="audio/mp4" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>A powerful and scalable library that efficiently computes matrix profiles</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>STUMPY is a powerful and scalable library that efficiently computes something called
+the matrix profile, which can be used for a variety of
+time series data mining tasks such as: pattern/motif
+(approximately repeated subsequences within a longer time series) discovery,
+anomaly/novelty (discord) discovery,
+shapelet discovery,
+semantic segmentation,
+density estimation,
+time series chains (temporally ordered set of subsequence patterns),
+and more!
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd34.m4a" length="26763867" type="audio/mp4" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd34.m4a</feedburner:origEnclosureLink>
+    </item>
+    
+    
+    
+    <item>
       <title>Episode 33: stdlib</title>
       <link>https://www.quansight.com/open-source-directions/</link>
       <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
@@ -43,7 +101,7 @@ expect from a standard library.
 
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
-          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd33.m4a">Download</a></p>
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd34.m4a">Download</a></p>
           <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>stdlib (&#34;standard lib&#34;) is a standard library for JavaScript and Node.js, with an
@@ -52,7 +110,7 @@ a collection of robust, high performance libraries for mathematics, statistics,
 data processing, streams, and more and includes many of the utilities you would
 expect from a standard library.
 </description>
-      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd33.m4a" fileSize="26763867" type="audio/mp4" />
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd34.m4a" fileSize="26763867" type="audio/mp4" />
       <itunes:explicit>no</itunes:explicit>
       <itunes:subtitle>The Standard library for JavaScript</itunes:subtitle>
       <itunes:author>Quansight, LLC</itunes:author>
@@ -64,8 +122,8 @@ expect from a standard library.
 </itunes:summary>
       <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
       <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
-      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd33.m4a" length="26763867" type="audio/mp4" />
-      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd33.m4a</feedburner:origEnclosureLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd34.m4a" length="26763867" type="audio/mp4" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd34.m4a</feedburner:origEnclosureLink>
     </item>
     
     
@@ -293,9 +351,6 @@ contexts as needed.
       <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd29.m4a" length="23805735" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd29.m4a</feedburner:origEnclosureLink>
     </item>
-    
-    
-    
     
     
     
