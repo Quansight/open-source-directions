@@ -4,8 +4,13 @@ subtitle: Plotting in Python
 date: 2019-12-06
 slides: https://docs.google.com/presentation/d/1SpMWvPc1tP7ca5eazWrN7a43tY0UcK-wLlEA0jjUrbU
 raw_video: https://cdn.ireland.production.livestorm.io/uploads/media/file/88511abe-7f9a-4fdc-9685-1ac96e6f6a74/91ab44ee-5e12-4394-982c-d8d705eb6e71.mp4
-description: |
-    Matplotlib is a Python 2D plotting library which produces publication quality
-    figures in a variety of hardcopy formats and interactive environments across
-    platforms. Matplotlib can be used in Python scripts, the Python and IPython shells,
-    the Jupyter notebook, web application servers, and four graphical user interface toolkits.
+description: "Matplotlib is a Python 2D plotting library which produces publication\
+  \ quality\nfigures in a variety of hardcopy formats and interactive environments\
+  \ across\nplatforms. Matplotlib can be used in Python scripts, the Python and IPython\
+  \ shells,\nthe Jupyter notebook, web application servers, and four graphical user\
+  \ interface toolkits.\n"
+filename: episodes/matplotlib.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd28.ogg
+ogg_size: 19859360
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd28.m4a
+m4a_size: 30710968
