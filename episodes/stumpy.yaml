@@ -1,0 +1,17 @@
+number: 34
+title: Stumpy
+subtitle: A powerful and scalable library that efficiently computes matrix profiles
+date: 2020-01-10
+slides: https://docs.google.com/presentation/d/1N71GIu7JsGRB92qo8sG5zmmsSFbvKCXcMAgdPFftWV4
+raw_video: https://cdn.ireland.production.livestorm.io/uploads/media/file/c593e6d3-2960-4cac-aa9e-c70e61978fcd/b21c758a-88c7-414c-8e59-3a0a1daaedd4.mp4
+description: |
+    STUMPY is a powerful and scalable library that efficiently computes something called
+    the matrix profile, which can be used for a variety of
+    time series data mining tasks such as: pattern/motif
+    (approximately repeated subsequences within a longer time series) discovery,
+    anomaly/novelty (discord) discovery,
+    shapelet discovery,
+    semantic segmentation,
+    density estimation,
+    time series chains (temporally ordered set of subsequence patterns),
+    and more!
