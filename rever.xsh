@@ -184,6 +184,8 @@ def download_google_slide_as_png(service, presentation_id, slide, filename):
     """Downloads a google slide as large PNG file."""
     j = service.presentations().pages().getThumbnail(presentationId=presentation_id, pageObjectId=slide['objectId'],
         thumbnailProperties_mimeType="PNG", thumbnailProperties_thumbnailSize="LARGE").execute()
+    print(f"Slide filename: {filename}")
+    print(f"Slide URL: {j['contentUrl']}")
     $[curl -L @(j['contentUrl']) > @(filename)]
 
 
@@ -242,7 +244,7 @@ def download_slides():
     slides = presentation.get('slides')
     # download the slides
     for name, slide in zip(["intro", "outro"], slides):
-        fname = f"{$REVER_DIR}/{name}-{episode.number}.png"
+        fname = f"{$REVER_DIR}/{name}-{$VERSION}.png"
         download_google_slide_as_png(service, presentation_id, slide, fname)
 
 
