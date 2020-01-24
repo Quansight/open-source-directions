@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Fri Jan 24 11:40:30 2020</lastBuildDate>
+  <lastBuildDate>Fri Jan 24 14:04:18 2020</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,73 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    
+    <item>
+      <title>Episode 35: IBM Lale</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Fri Jan 24 00:00:00 2020</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-35</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>Lale is a Python library for semi-automated data science. Lale makes it easy to
+automatically select algorithms and tune hyperparameters of pipelines that are
+compatible with scikit-learn, in a type-safe fashion. If you are a data scientist
+who wants to experiment with automated machine learning, this library is for you!
+Lale adds value beyond scikit-learn along three dimensions: automation,
+correctness checks, and interoperability. For automation, Lale provides
+a consistent high-level interface to existing pipeline search tools including
+GridSearchCV, SMAC, and Hyperopt. For correctness checks, Lale uses JSON Schema
+to catch mistakes when there is a mismatch between hyperparameters and their type,
+or between data and operators. And for interoperability, Lale has a growing library
+of transformers and estimators from popular libraries such as scikit-learn, XGBoost,
+PyTorch etc. Lale can be installed just like any other Python package and can be
+edited with off-the-shelf Python tools such as Jupyter notebooks.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd35.m4a">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>Lale is a Python library for semi-automated data science. Lale makes it easy to
+automatically select algorithms and tune hyperparameters of pipelines that are
+compatible with scikit-learn, in a type-safe fashion. If you are a data scientist
+who wants to experiment with automated machine learning, this library is for you!
+Lale adds value beyond scikit-learn along three dimensions: automation,
+correctness checks, and interoperability. For automation, Lale provides
+a consistent high-level interface to existing pipeline search tools including
+GridSearchCV, SMAC, and Hyperopt. For correctness checks, Lale uses JSON Schema
+to catch mistakes when there is a mismatch between hyperparameters and their type,
+or between data and operators. And for interoperability, Lale has a growing library
+of transformers and estimators from popular libraries such as scikit-learn, XGBoost,
+PyTorch etc. Lale can be installed just like any other Python package and can be
+edited with off-the-shelf Python tools such as Jupyter notebooks.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd35.m4a" fileSize="28048779" type="audio/mp4" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>Semi-Automated Data Science</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>Lale is a Python library for semi-automated data science. Lale makes it easy to
+automatically select algorithms and tune hyperparameters of pipelines that are
+compatible with scikit-learn, in a type-safe fashion. If you are a data scientist
+who wants to experiment with automated machine learning, this library is for you!
+Lale adds value beyond scikit-learn along three dimensions: automation,
+correctness checks, and interoperability. For automation, Lale provides
+a consistent high-level interface to existing pipeline search tools including
+GridSearchCV, SMAC, and Hyperopt. For correctness checks, Lale uses JSON Schema
+to catch mistakes when there is a mismatch between hyperparameters and their type,
+or between data and operators. And for interoperability, Lale has a growing library
+of transformers and estimators from popular libraries such as scikit-learn, XGBoost,
+PyTorch etc. Lale can be installed just like any other Python package and can be
+edited with off-the-shelf Python tools such as Jupyter notebooks.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd35.m4a" length="28048779" type="audio/mp4" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd35.m4a</feedburner:origEnclosureLink>
+    </item>
+    
     
     
     <item>
