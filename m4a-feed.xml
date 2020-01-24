@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Thu Jan 23 16:40:34 2020</lastBuildDate>
+  <lastBuildDate>Fri Jan 24 11:40:30 2020</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -62,7 +62,7 @@ density estimation,
 time series chains (temporally ordered set of subsequence patterns),
 and more!
 </description>
-      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd34.m4a" fileSize="26763867" type="audio/mp4" />
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd34.m4a" fileSize="26235121" type="audio/mp4" />
       <itunes:explicit>no</itunes:explicit>
       <itunes:subtitle>A powerful and scalable library that efficiently computes matrix profiles</itunes:subtitle>
       <itunes:author>Quansight, LLC</itunes:author>
@@ -79,7 +79,7 @@ and more!
 </itunes:summary>
       <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
       <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
-      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd34.m4a" length="26763867" type="audio/mp4" />
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd34.m4a" length="26235121" type="audio/mp4" />
       <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd34.m4a</feedburner:origEnclosureLink>
     </item>
     
