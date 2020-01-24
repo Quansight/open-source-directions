@@ -4,17 +4,21 @@ subtitle: Semi-Automated Data Science
 date: 2020-01-24
 slides: https://docs.google.com/presentation/d/1A2YtSXWPxtjBWa1wnY8ztecOahpqb14Mz8JZuvyIhEI
 raw_video: https://cdn.ireland.production.livestorm.io/uploads/media/file/47f56dd3-df9c-4f38-9544-829a3d65cefe/196c371a-daa3-46a6-a303-1ed5fd6e2275.mp4
-description: |
-    Lale is a Python library for semi-automated data science. Lale makes it easy to
-    automatically select algorithms and tune hyperparameters of pipelines that are
-    compatible with scikit-learn, in a type-safe fashion. If you are a data scientist
-    who wants to experiment with automated machine learning, this library is for you!
-    Lale adds value beyond scikit-learn along three dimensions: automation,
-    correctness checks, and interoperability. For automation, Lale provides
-    a consistent high-level interface to existing pipeline search tools including
-    GridSearchCV, SMAC, and Hyperopt. For correctness checks, Lale uses JSON Schema
-    to catch mistakes when there is a mismatch between hyperparameters and their type,
-    or between data and operators. And for interoperability, Lale has a growing library
-    of transformers and estimators from popular libraries such as scikit-learn, XGBoost,
-    PyTorch etc. Lale can be installed just like any other Python package and can be
-    edited with off-the-shelf Python tools such as Jupyter notebooks.
+description: "Lale is a Python library for semi-automated data science. Lale makes\
+  \ it easy to\nautomatically select algorithms and tune hyperparameters of pipelines\
+  \ that are\ncompatible with scikit-learn, in a type-safe fashion. If you are a data\
+  \ scientist\nwho wants to experiment with automated machine learning, this library\
+  \ is for you!\nLale adds value beyond scikit-learn along three dimensions: automation,\n\
+  correctness checks, and interoperability. For automation, Lale provides\na consistent\
+  \ high-level interface to existing pipeline search tools including\nGridSearchCV,\
+  \ SMAC, and Hyperopt. For correctness checks, Lale uses JSON Schema\nto catch mistakes\
+  \ when there is a mismatch between hyperparameters and their type,\nor between data\
+  \ and operators. And for interoperability, Lale has a growing library\nof transformers\
+  \ and estimators from popular libraries such as scikit-learn, XGBoost,\nPyTorch\
+  \ etc. Lale can be installed just like any other Python package and can be\nedited\
+  \ with off-the-shelf Python tools such as Jupyter notebooks.\n"
+filename: episodes/lale.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd35.ogg
+ogg_size: 18367996
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd35.m4a
+m4a_size: 28048779
