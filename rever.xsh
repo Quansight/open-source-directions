@@ -264,7 +264,7 @@ def raw_mp3():
     """Converts the video file to a raw MP3 locally."""
     episodes = load_episodes()
     episode = episodes[int($VERSION)]
-    mp3 = os.path.join($REVER_DIR, f'osd{$VERSION}-raw.mp3')
+    mp3 = os.path.join($REVER_DIR, f'osd{$VERSION}-raw-audio.mp3')
     mp4 = os.path.join($REVER_DIR, f'osd{$VERSION}-raw.mp4')
     ![ffmpeg -y -i @(mp4) @(mp3)]
 
