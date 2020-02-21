@@ -1,0 +1,14 @@
+number: 36
+title: Bokeh 2.0
+subtitle: Interactive visualization library for modern web browsers
+date: 2020-02-21
+slides: https://docs.google.com/presentation/d/1zcfRmenkk6En-EFwJeCNZ3ld-v3Zua7PBkxejXNDeOA # URL of intro/outro slides on google drive
+raw_video: https://cdn.ireland.production.livestorm.io/uploads/media/file/c1d15869-e13a-4950-938f-3ef1f48e9f79/b248307f-027a-42fb-84da-44b4e2bb15d4.mp4
+description: |
+    Bokeh is an interactive visualization library for modern web browsers.
+    It provides elegant, concise construction of versatile graphics, and
+    affords high-performance interactivity over large or streaming datasets.
+    Bokeh can help anyone who would like to quickly and easily make interactive
+    plots, dashboards, and data applications.
+
+    This is our second time visiting Bokeh, in preperation for the v2.0 release!
