@@ -1,0 +1,10 @@
+number: 37
+title: PyJanitor
+subtitle: Extending Pandas with a verb-based API
+date: 2020-03-06
+slides: https://docs.google.com/presentation/d/1F78hZPwkDMMTTjlLDpkNrt33HeqkF1-P6Z7c78bgGRQ
+raw_video: https://cdn.ireland.production.livestorm.io/uploads/media/file/79a1d53b-4194-4929-86d7-9f92e8b930e4/f375d0a4-e05a-4906-9509-0a7412af943b.mp4
+description: |
+    Originally a port of the R package, pyjanitor has evolved from a set of convenient data cleaning
+    routines into an experiment with the method chaining paradigm. Data preprocessing usually consists
+    of a series of steps that involve transforming raw data into an understandable/usable format.
