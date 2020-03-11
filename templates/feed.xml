@@ -13,7 +13,7 @@
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
   <media:copyright>Quansight, LLC</media:copyright>
-  <media:thumbnail url="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" />
+  <media:thumbnail url="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" />
   <media:keywords>open,source,python,roadmaps</media:keywords>
   <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology/Tech News</media:category>
   <itunes:owner>
@@ -21,7 +21,7 @@
     <itunes:name>Quansight, LLC</itunes:name></itunes:owner>
     <itunes:author>Quansight, LLC</itunes:author>
     <itunes:explicit>no</itunes:explicit>
-    <itunes:image href="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" />
+    <itunes:image href="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" />
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
@@ -42,7 +42,7 @@
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="{{ audio_url }}">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>{{ episode.description }}</description>
       <media:content url="{{ audio_url }}" fileSize="{{ audio_size }}" type="{{ audio_mime_type }}" />
@@ -60,6 +60,6 @@
     <copyright>Quansight, LLC</copyright>
     <media:credit role="author">Quansight, LLC</media:credit>
     <media:rating>nonadult</media:rating>
-    <media:description type="plain">https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png</media:description>
+    <media:description type="plain">https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png</media:description>
 </channel>
 </rss>

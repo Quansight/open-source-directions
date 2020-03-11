@@ -13,7 +13,7 @@
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
   <media:copyright>Quansight, LLC</media:copyright>
-  <media:thumbnail url="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" />
+  <media:thumbnail url="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" />
   <media:keywords>open,source,python,roadmaps</media:keywords>
   <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology/Tech News</media:category>
   <itunes:owner>
@@ -21,7 +21,7 @@
     <itunes:name>Quansight, LLC</itunes:name></itunes:owner>
     <itunes:author>Quansight, LLC</itunes:author>
     <itunes:explicit>no</itunes:explicit>
-    <itunes:image href="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" />
+    <itunes:image href="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" />
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
@@ -46,7 +46,7 @@ This is our second time visiting Bokeh, in preperation for the v2.0 release!
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd36.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>Bokeh is an interactive visualization library for modern web browsers.
 It provides elegant, concise construction of versatile graphics, and
@@ -101,7 +101,7 @@ edited with off-the-shelf Python tools such as Jupyter notebooks.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd35.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>Lale is a Python library for semi-automated data science. Lale makes it easy to
 automatically select algorithms and tune hyperparameters of pipelines that are
@@ -165,7 +165,7 @@ and more!
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd34.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>STUMPY is a powerful and scalable library that efficiently computes something called
 the matrix profile, which can be used for a variety of
@@ -218,7 +218,7 @@ expect from a standard library.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd34.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>stdlib (&#34;standard lib&#34;) is a standard library for JavaScript and Node.js, with an
 emphasis on numerical and scientific computing applications. The library provides
@@ -265,7 +265,7 @@ the input cells from the rendered notebook.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd32.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>Voilà turns Jupyter notebooks into standalone web applications.
 
@@ -319,7 +319,7 @@ the openness, replicability, and interoperability of modeling tools.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd31.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>The Econ-ARK project provides open-source toolkits for researchers
 trying to understand how economic and social outcomes result from
@@ -375,7 +375,7 @@ of the data that has the closest possible equivalent fuzzy topological structure
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd30.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>Uniform Manifold Approximation and Projection (UMAP) is a dimension reduction
 technique that can be used for visualisation similarly to t-SNE, but also for
@@ -436,7 +436,7 @@ contexts as needed.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd29.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>Panel provides tools for easily composing widgets, plots, tables,
 and other viewable objects and controls into control panels, apps,
@@ -486,7 +486,7 @@ the Jupyter notebook, web application servers, and four graphical user interface
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd28.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>Matplotlib is a Python 2D plotting library which produces publication quality
 figures in a variety of hardcopy formats and interactive environments across
@@ -525,7 +525,7 @@ grow funding opportunities.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd27.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>OpenTeams brings together organizations using open source software
 with creators and maintainers of the software to facilitate and
@@ -563,7 +563,7 @@ Canvas or SVG.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd26.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>Vega is a declarative format for creating, saving, and sharing
 visualization designs. With Vega, visualizations are described
@@ -601,7 +601,7 @@ making your code immediately reproducible by anyone, anywhere.</p>
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd25.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>Have a repository full of Jupyter notebooks? With Binder,
 open those notebooks in an executable environment,
@@ -636,7 +636,7 @@ on top of the Jupyter ecosystem.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd24.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>The nteract project is an ecosystem of open source tools to
 enable people to build their own front-ends and workflows
@@ -676,7 +676,7 @@ Conda-forge is an official NumFOCUS project.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd23.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>conda-forge is community led collection of recipes, build infrastructure
 and distributions. Conda-forge currently build conda packages for Linux,
@@ -719,7 +719,7 @@ various contexts. It is built on NumPy, SciPy, and matplotlib.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd22.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>SciKit-Learn provides simple and efficient tools for data mining and
 data analysis which are accessible to everybody, and reusable in
@@ -756,7 +756,7 @@ xtensor requires a modern C++ compiler supporting C++14.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd21.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>xtensor provides an extensible expression system enabling lazy broadcasting, an API following the idioms of the C++ standard library, and tools to manipulate array expressions and build upon xtensor. xtensor containers are inspired by NumPy, the Python array programming library. Adaptors for existing data structures to be plugged into our expression system can easily be written.
 
@@ -793,7 +793,7 @@ CORRECTION: In the episode Hameer implied moving data from GPUs to CPUs won’t 
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd20.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>Array interface object for Python with pluggable backends and a multiple-dispatch mechanism for defining down-stream functions.
 
@@ -830,7 +830,7 @@ While closely related to the iodide project, Pyodide may be used standalone in a
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd19.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>It provides transparent conversion of objects between Javascript and Python. When inside a browser, this means Python has full access to the Web APIs.
 
@@ -867,7 +867,7 @@ Markov chain Monte Carlo (MCMC) and variational inference (VI).
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd18.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>PyMC3 is a probabilistic programming package for Python that allows users
 to fit Bayesian models using a variety of numerical methods, most notably
@@ -905,7 +905,7 @@ in ML and developers easily build and deploy ML powered applications.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd17.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>TensorFlow is an end-to-end open source platform for machine learning.
 It has a comprehensive, flexible ecosystem of tools, libraries and
@@ -949,7 +949,7 @@ intuitive and easy to debug.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd16.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>Chainer is a powerful, flexible and intuitive deep learning framework.
 Chainer supports CUDA computation. It only requires a few lines of code to
@@ -1001,7 +1001,7 @@ one of the Numba decorators to a Python function is all that is needed.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd15.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>Numba is an open source JIT compiler that translates a subset of
 Python and NumPy code into fast machine code. Numba translates
@@ -1049,7 +1049,7 @@ registering and segmenting multidimensional data.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd14.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>ITK is an open-source, cross-platform system that provides developers with
 an extensive suite of software tools for image analysis.  Developed through
@@ -1086,7 +1086,7 @@ registering and segmenting multidimensional data.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd13.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>Project Jupyter exists to develop open-source software, open-standards, and services for interactive computing across dozens of programming languages. The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
 </description>
@@ -1116,7 +1116,7 @@ registering and segmenting multidimensional data.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd12.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>The Spark Python API (PySpark) exposes the Spark programming model to Pytho</description>
       <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd12.m4a" fileSize="29060907" type="audio/mp4" />
@@ -1145,7 +1145,7 @@ registering and segmenting multidimensional data.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd11.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>Dask provides advanced parallelism for analytics, enabling performance at scale for the tools you love. Dask is open source and freely available. It is developed in coordination with other community projects like Numpy, Pandas, and SciKit-Learn.
 </description>
@@ -1178,7 +1178,7 @@ PyData/Sparse is well on its way to replacing scipy.sparse as the de-facto spars
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd10.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>The aim of PyData/Sparse is to create sparse containers that implement the ndarray interface. Traditionally in the PyData ecosystem, sparse arrays have been provided by the scipy.sparse submodule. All containers there depend on and emulate the numpy.matrix interface. This means that they are limited to two dimensions and also do not work well in places where numpy.ndarray would work.
 
@@ -1219,7 +1219,7 @@ data and relationships of interest in a principled way.</p>
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd9.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>Datashader is a graphics pipeline system for creating meaningful
 representations of large datasets quickly and flexibly. Datashader
@@ -1268,7 +1268,7 @@ upon by the world&#39;s leading scientists &amp; engineers.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd8.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>SciPy is open-source software for mathematics, science, and engineering.
 It includes modules for statistics, optimization, integration, linear algebra,
@@ -1320,7 +1320,7 @@ while always being able to access the raw data underlying any plot.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd7.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>GeoViews is a Python library that makes it easy to explore and visualize
 geographical, meteorological, and oceanographic datasets, such as those
@@ -1371,7 +1371,7 @@ use to smooth the progression of data from developers and providers to users.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd6.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>Intake will appeal to different groups
 but is useful for all and acts as a common platform that everyone can
@@ -1409,7 +1409,7 @@ Blog Post: https://quansight.github.io/Episode-5-CuPy/
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd5.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>CuPy&#39;s interface is highly compatible with NumPy; in most cases it can be
 used as a drop-in replacement.
@@ -1451,7 +1451,7 @@ actually in PyViz, apart from the examples in the tutorials.</p>
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd4.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>PyViz is a set of examples that help you see how various
 Python packages can work together to solve a huge range
@@ -1496,7 +1496,7 @@ All purely symbolic mathematical computation is in scope for SymPy.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd3.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>SymPy is a Python library for symbolic mathematics. It
 aims to become a full-featured computer algebra system
@@ -1551,7 +1551,7 @@ Plasma Store, Apache Arrow, and Tensor Comprehensions.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd2.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>XND is an extensible framework of C libraries and Python modules for
 handling typed memory blocks. XND recreates the foundations of NumPy as a
@@ -1620,7 +1620,7 @@ Beyond its many built-in features, its abilities can be extended even further vi
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd1.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>NOTE: Please forgive the technical difficulties we had in recording this episode.
 Carlos had some connectivity issues. We are releasing this episode because we
@@ -1668,7 +1668,7 @@ data applications.
           <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
 
           <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd0.m4a">Download</a></p>
-          <img src="https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png" height="544" width="502" alt=""/>]]>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
       </content:encoded>
       <description>This episode features Bokeh, which is a web-based and interactive visualization
 library for Python. Its goal is to provide elegant, concise construction of
@@ -1698,6 +1698,6 @@ data applications.
     <copyright>Quansight, LLC</copyright>
     <media:credit role="author">Quansight, LLC</media:credit>
     <media:rating>nonadult</media:rating>
-    <media:description type="plain">https://quansight.github.io/open-source-directions/images/quansight-spiral-logo.png</media:description>
+    <media:description type="plain">https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png</media:description>
 </channel>
 </rss>
