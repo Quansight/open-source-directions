@@ -496,7 +496,7 @@ $ACTIVITIES = [
     'download_raw_video',
     'raw_mp3',
     'transcribe_raw',
-    ' render_video',
+    'render_video',
     'youtube_upload',
     # podcast generation
     'strip_audio',
