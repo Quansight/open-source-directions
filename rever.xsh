@@ -315,8 +315,13 @@ def render_video():
     episodes = load_episodes()
     episode = episodes[int($VERSION)]
 
-    # make intro & outro movies
+    # make intro movies
+    if not os.path.isfile(f"{$REVER_DIR}/intro-jingle.wav"):
+        ![curl -L -o $REVER_DIR/intro-jingle.wav @(INTRO_WAV_URL)]
     ![ffmpeg -y -i $REVER_DIR/intro-$VERSION.png -i $REVER_DIR/intro-jingle.wav $REVER_DIR/intro-$VERSION.mp4]
+    # make outro movie
+    if not os.path.isfile(f"{$REVER_DIR}/outro-jingle.wav"):
+        ![curl -L -o $REVER_DIR/outro-jingle.wav @(OUTRO_WAV_URL)]
     ![ffmpeg -y -i $REVER_DIR/outro-$VERSION.png -i $REVER_DIR/outro-jingle.wav $REVER_DIR/outro-$VERSION.mp4]
 
     # move movies into one another
@@ -491,7 +496,7 @@ $ACTIVITIES = [
     'download_raw_video',
     'raw_mp3',
     'transcribe_raw',
-    'render_video',
+    ' render_video',
     'youtube_upload',
     # podcast generation
     'strip_audio',
