@@ -4,8 +4,11 @@ subtitle: Create an online book with Jupyter Notebooks and Jekyll
 date: 2020-03-20
 slides: https://docs.google.com/presentation/d/1qfzx3m-ulMMGgdUpQneLB1NkoR9v6wrs-B4RBmLkY3Q
 raw_video: https://cdn.ireland.production.livestorm.io/uploads/media/file/8110afad-a8e9-4137-8231-f284ca4346a7/76b2a8eb-6619-4fc7-b32f-a0705da7a211.mp4
-description: |
-    Jupyter Book lets you build an online book using a collection of
-    Jupyter Notebooks and Markdown files. Its output is similar to the
-    excellent Bookdown tool, and adds extra functionality for people
-    running a Jupyter stack.
+description: "Jupyter Book lets you build an online book using a collection of\nJupyter\
+  \ Notebooks and Markdown files. Its output is similar to the\nexcellent Bookdown\
+  \ tool, and adds extra functionality for people\nrunning a Jupyter stack.\n"
+filename: episodes/jupyter-book.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd38.ogg
+ogg_size: 18588289
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd38.m4a
+m4a_size: 30701594
