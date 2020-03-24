@@ -444,7 +444,7 @@ def youtube_upload():
     ]
     body = dict(
         snippet=dict(
-            title=f"Episode {$VERSION}: {episode.title} - Open Source Directions hosted by Quansight",
+            title=f"Episode {$VERSION}: {episode.title} - Open Source Directions hosted by OpenTeams",
             description=episode.description,
             tags=tags,
             categoryId=28, # Science & Technology
