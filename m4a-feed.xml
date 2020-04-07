@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Fri Mar 20 16:05:19 2020</lastBuildDate>
+  <lastBuildDate>Tue Apr  7 13:39:32 2020</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,43 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    
+    <item>
+      <title>Episode 39: Apache Arrow</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Fri Apr  3 00:00:00 2020</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-39</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>Apache Arrow is a cross-language development platform for in-memory data.
+It supports zero-copy streaming messaging and has support for a number of
+languages, including C, C++, Python, R, Rust, and many others.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd39.m4a">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>Apache Arrow is a cross-language development platform for in-memory data.
+It supports zero-copy streaming messaging and has support for a number of
+languages, including C, C++, Python, R, Rust, and many others.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd39.m4a" fileSize="31763303" type="audio/mp4" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>A cross-language development platform for in-memory data</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>Apache Arrow is a cross-language development platform for in-memory data.
+It supports zero-copy streaming messaging and has support for a number of
+languages, including C, C++, Python, R, Rust, and many others.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd39.m4a" length="31763303" type="audio/mp4" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd39.m4a</feedburner:origEnclosureLink>
+    </item>
+    
     
     
     <item>
