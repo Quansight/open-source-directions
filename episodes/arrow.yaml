@@ -1,0 +1,10 @@
+number: 39
+title: Apache Arrow
+subtitle: A cross-language development platform for in-memory data
+date: 2020-04-03
+slides: https://docs.google.com/presentation/d/1vVZEX0GPeeiNhCXb2r8-r-O2cOlKp2glS_5BOLmtfL0
+raw_video: https://cdn.ireland.production.livestorm.io/uploads/media/file/e85c3d98-ffcf-4bc6-81a3-ee87bdbc87c2/bc19e7e7-73f3-42aa-a4c6-dfe4f270dc54.mp4?v=1585934536
+description: |
+    Apache Arrow is a cross-language development platform for in-memory data.
+    It supports zero-copy streaming messaging and has support for a number of
+    languages, including C, C++, Python, R, Rust, and many others.
