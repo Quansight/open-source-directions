@@ -1,0 +1,10 @@
+number: 40
+title: Fortran
+subtitle: A high-performance parallel programming language for STEM
+date: 2020-04-17
+slides: https://docs.google.com/presentation/d/13uY0WrSTLaOgwRt8ZXNSQbjyJKe6d2sKZmXXFXBpkWs
+raw_video: https://cdn.ireland.production.livestorm.io/uploads/media/file/855027c7-9e87-40d8-a7e4-40befaa389c1/2eef9675-32f0-4a08-b0de-0aa29ee41f61.mp4
+description: |
+    Fortran is a compiled language which means that once written,
+    the source code must be passed through a compiler to produce
+    a machine executable that can be run.
