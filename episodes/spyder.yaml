@@ -1,21 +1,12 @@
-number: 1
+number: 41
 title: Spyder
-subtitle: A powerful Data Science environment written in Python, for Python.
-date: 2018-08-10
-description: "NOTE: Please forgive the technical difficulties we had in recording\
-  \ this episode.\nCarlos had some connectivity issues. We are releasing this episode\
-  \ because we\nstill want to bring you all of the news about Spyder!\n\nSpyder is\
-  \ a powerful scientific environment written in Python, for Python, and designed\
-  \ by and for scientists, engineers and data analysts. It offers a unique combination\
-  \ of the advanced editing, analysis, debugging, and profiling functionality of a\
-  \ comprehensive development tool with the data exploration, interactive execution,\
-  \ deep inspection, and beautiful visualization capabilities of a scientific package.\n\
-  \nBeyond its many built-in features, its abilities can be extended even further\
-  \ via its plugin system and API. Furthermore, Spyder can also be used as a PyQt5\
-  \ extension library, allowing developers to build upon its functionality and embed\
-  \ its components, such as the interactive console, in their own PyQt software.\n"
-filename: episodes/spyder.yaml
-ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd1.ogg
-ogg_size: 19044022
-m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd1.m4a
-m4a_size: 42622452
+subtitle: The Scientific Python Development Environment
+date: 2020-05-01
+slides: https://docs.google.com/presentation/d/1Js3qXCQivJ0wMcZPNgirM1fg-uNmgwbZUzkkCoMCn3M
+raw_video: https://cdn.ireland.production.livestorm.io/uploads/media/file/c58b363a-13e9-4144-98d0-91701a7b224b/3f39fcc9-17b7-45e1-bbfd-d709403c1ba1.mp4
+description: |
+    Spyder is a powerful scientific environment written in Python, for Python, and
+    designed by and for scientists, engineers and data analysts. It offers a unique
+    combination of the advanced editing, analysis, debugging, and profiling functionality
+    of a comprehensive development tool with the data exploration, interactive execution,
+    deep inspection, and beautiful visualization capabilities of a scientific package.
