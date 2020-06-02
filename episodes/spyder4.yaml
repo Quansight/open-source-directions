@@ -1,0 +1,17 @@
+number: 41
+title: Spyder
+subtitle: The Scientific Python Development Environment
+date: 2020-05-01
+slides: https://docs.google.com/presentation/d/1Js3qXCQivJ0wMcZPNgirM1fg-uNmgwbZUzkkCoMCn3M
+raw_video: https://cdn.ireland.production.livestorm.io/uploads/media/file/c58b363a-13e9-4144-98d0-91701a7b224b/3f39fcc9-17b7-45e1-bbfd-d709403c1ba1.mp4
+description: "Spyder is a powerful scientific environment written in Python, for Python,\
+  \ and\ndesigned by and for scientists, engineers and data analysts. It offers a\
+  \ unique\ncombination of the advanced editing, analysis, debugging, and profiling\
+  \ functionality\nof a comprehensive development tool with the data exploration,\
+  \ interactive execution,\ndeep inspection, and beautiful visualization capabilities\
+  \ of a scientific package.\n"
+filename: episodes/spyder4.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd41.ogg
+ogg_size: 20422088
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd41.m4a
+m4a_size: 31677718
