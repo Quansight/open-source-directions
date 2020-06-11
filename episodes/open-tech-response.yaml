@@ -4,6 +4,10 @@ subtitle: The hub for open source responding to an emergency situations
 date: 2020-05-08
 slides: https://docs.google.com/presentation/d/1jNxWE1mNpYQpFbbkVhrB4X9nSSuUNdr3B5piFCnwt_Q
 raw_video: https://cdn.ireland.production.livestorm.io/uploads/media/file/8ac9b01b-2d48-4f0d-8008-ffea455451a9/e41ed627-57ad-4672-9bef-6284e397a73f.mp4
-description: |
-    OpenTechResponse is the hub for information sharing and coordination between
-    open source projects responding to an emergency or crisis situation.
+description: "OpenTechResponse is the hub for information sharing and coordination\
+  \ between\nopen source projects responding to an emergency or crisis situation.\n"
+filename: episodes/open-tech-response.yaml
+ogg_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd42.ogg
+ogg_size: 16806801
+m4a_url: https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd42.m4a
+m4a_size: 25070142
