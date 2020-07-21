@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Thu Jun 11 16:47:14 2020</lastBuildDate>
+  <lastBuildDate>Tue Jul 21 16:51:39 2020</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,37 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    
+    <item>
+      <title>Episode 43: Jupyter &amp; Nteract</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Fri Jun  5 00:00:00 2020</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-43</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>In this episode of Open Source Directions we were joined by Matthew Seal who talked about the work he has been doing with Jupyter and Nteract. Matthew also discussed a particular topic: common Jupyter tools and their adoption for various use cases in the wild.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd43.ogg">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>In this episode of Open Source Directions we were joined by Matthew Seal who talked about the work he has been doing with Jupyter and Nteract. Matthew also discussed a particular topic: common Jupyter tools and their adoption for various use cases in the wild.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd43.ogg" fileSize="18199021" type="audio/ogg" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>Interactive notebooks are a great tool for data scientists, hobbyists, and programmers looking to document their code, experiment with models, generate visualizations, and prototype code. The Jupyter notebook format is one of the most popular interactive notebook formats and is supported by the nteract ecosystem.</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>In this episode of Open Source Directions we were joined by Matthew Seal who talked about the work he has been doing with Jupyter and Nteract. Matthew also discussed a particular topic: common Jupyter tools and their adoption for various use cases in the wild.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd43.ogg" length="18199021" type="audio/ogg" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd43.ogg</feedburner:origEnclosureLink>
+    </item>
+    
     
     
     <item>
