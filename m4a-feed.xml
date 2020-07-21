@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Tue Jul 21 16:51:39 2020</lastBuildDate>
+  <lastBuildDate>Tue Jul 21 17:38:48 2020</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,37 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    
+    <item>
+      <title>Episode 44: RecallGraph</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Fri Jun 19 00:00:00 2020</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-44</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>In this episode of Open Source Directions we were joined by Aditya Mukhopadhyay who talked about the work he has been doing with RecallGraph. RecallGraph is a versioned-graph data store - it retains all changes that its data (vertices and edges) have gone through to reach their current state. It supports point-in-time graph traversals, letting the user query any past state of the graph just as easily as the present.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd44.m4a">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>In this episode of Open Source Directions we were joined by Aditya Mukhopadhyay who talked about the work he has been doing with RecallGraph. RecallGraph is a versioned-graph data store - it retains all changes that its data (vertices and edges) have gone through to reach their current state. It supports point-in-time graph traversals, letting the user query any past state of the graph just as easily as the present.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd44.m4a" fileSize="24962351" type="audio/mp4" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>RecallGraph is a Foxx Microservice for ArangoDB that features VCS-like semantics in many parts of its interface, and is backed by a transactional event tracker. It is currently being developed and tested on ArangoDB v3.5 and v3.6, with support for v3.7 in the pipeline.</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>In this episode of Open Source Directions we were joined by Aditya Mukhopadhyay who talked about the work he has been doing with RecallGraph. RecallGraph is a versioned-graph data store - it retains all changes that its data (vertices and edges) have gone through to reach their current state. It supports point-in-time graph traversals, letting the user query any past state of the graph just as easily as the present.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd44.m4a" length="24962351" type="audio/mp4" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd44.m4a</feedburner:origEnclosureLink>
+    </item>
+    
     
     
     <item>
