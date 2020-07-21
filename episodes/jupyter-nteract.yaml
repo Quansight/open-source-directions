@@ -1,0 +1,8 @@
+number: 43
+title:  Jupyter & Nteract
+subtitle:  Interactive notebooks are a great tool for data scientists, hobbyists, and programmers looking to document their code, experiment with models, generate visualizations, and prototype code. The Jupyter notebook format is one of the most popular interactive notebook formats and is supported by the nteract ecosystem.
+date: 2020-06-05
+slides:  https://docs.google.com/presentation/d/1ntpprpBIxT0lppGXPYDXXZ4iWt8lHwkVBhzPjvcQrcY/edit
+raw_video: https://cdn.ireland.production.livestorm.io/uploads/media/file/dfe10075-341e-4ee7-a0f4-9144e037b095/50e622e1-8026-4770-9cab-6ddb9e580c64.mp4
+description: |
+    In this episode of Open Source Directions we were joined by Matthew Seal who talked about the work he has been doing with Jupyter and Nteract. Matthew also discussed a particular topic: common Jupyter tools and their adoption for various use cases in the wild.
