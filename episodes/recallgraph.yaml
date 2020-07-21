@@ -1,0 +1,8 @@
+number: 44
+title:  RecallGraph
+subtitle:  RecallGraph is a Foxx Microservice for ArangoDB that features VCS-like semantics in many parts of its interface, and is backed by a transactional event tracker. It is currently being developed and tested on ArangoDB v3.5 and v3.6, with support for v3.7 in the pipeline.
+date: 2020-06-19
+slides:  https://docs.google.com/presentation/d/1n5eP9RIOOEY5KxF5OjUB_sfNjbm2vxhCL_4qFPJ35wE/edit
+raw_video: https://cdn.ireland.production.livestorm.io/uploads/media/file/6daff032-d090-4a8d-8918-50fcbdbb057b/a2f1b235-a6e9-45cc-9042-1bde53777a7c.mp4
+description: |
+    In this episode of Open Source Directions we were joined by Aditya Mukhopadhyay who talked about the work he has been doing with RecallGraph. RecallGraph is a versioned-graph data store - it retains all changes that its data (vertices and edges) have gone through to reach their current state. It supports point-in-time graph traversals, letting the user query any past state of the graph just as easily as the present.

@@ -294,8 +294,8 @@ def find_episode_start_end():
     with open(transcript_file) as f:
         j = json.load(f)
     words = [i for i in j['results']['items'] if i['type'] == 'pronunciation']
-    #phrase = ["hello", "the", "internet"]
-    phrase = ["hello", "of", "the", "incident"]
+    phrase = ["hello", "the", "internet"]
+    #phrase = ["hello", "of", "the", "incident"]
     for n, word in enumerate(words):
         # find first word in phrase
         if not word_matches(word, phrase[0]):
