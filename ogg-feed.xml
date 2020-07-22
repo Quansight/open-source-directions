@@ -8,7 +8,7 @@
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/OpenSourceDirections" />
   <description>Bringing you the news about the future of Open Source</description>
   <language>en</language>
-  <lastBuildDate>Tue Jul 21 17:38:48 2020</lastBuildDate>
+  <lastBuildDate>Tue Jul 21 20:30:20 2020</lastBuildDate>
   <generator>Rever https://regro.github.io/rever-docs/</generator>
   <feedburner:info uri="opensourcedirections" />
   <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
@@ -25,6 +25,43 @@
     <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
     <itunes:subtitle>Bringing you the news about the future of Open Source</itunes:subtitle>
     <itunes:category text="Technology"><itunes:category text="Tech News" /></itunes:category>
+    
+    
+    <item>
+      <title>Episode 45: Julia</title>
+      <link>https://www.quansight.com/open-source-directions/</link>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">info@quansight.com (Quansight, LLC)</dc:creator>
+      <pubDate>Fri Jul 17 00:00:00 2020</pubDate>
+      <guid isPermaLink="false">https://www.quansight.com/open-source-directions/episode-45</guid>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <![CDATA[<p>In this episode of Open Source Directions we were joined by Jeff Bezanson and Katie Hyatt who talk about the work they have been doing with Julia. Julia is a programming language that was designed from the beginning for high performance. It programs compile to native code for multiple platforms via LLVM. Julia is dynamically typed, feels like a scripting language, and has good support for interactive use.
+
+Julia has a rich language of descriptive datatypes, and type declarations can be used to clarify and solidify programs. This language uses multiple dispatch as a paradigm, making it easy to express many object-oriented and functional programming patterns. It provides asynchronous I/O, debugging, logging, profiling, a package manager, and more.
+</p>
+
+          <h3 id="listen-to-the-episode">Listen to the Episode!</h3>
+
+          <p><a href="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd45.ogg">Download</a></p>
+          <img src="https://quansight.github.io/open-source-directions/images/openteams-mobile-logo.png" height="544" width="502" alt=""/>]]>
+      </content:encoded>
+      <description>In this episode of Open Source Directions we were joined by Jeff Bezanson and Katie Hyatt who talk about the work they have been doing with Julia. Julia is a programming language that was designed from the beginning for high performance. It programs compile to native code for multiple platforms via LLVM. Julia is dynamically typed, feels like a scripting language, and has good support for interactive use.
+
+Julia has a rich language of descriptive datatypes, and type declarations can be used to clarify and solidify programs. This language uses multiple dispatch as a paradigm, making it easy to express many object-oriented and functional programming patterns. It provides asynchronous I/O, debugging, logging, profiling, a package manager, and more.
+</description>
+      <media:content url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd45.ogg" fileSize="18631300" type="audio/ogg" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:subtitle>Julia is a programming language that provides a sophisticated compiler, distributed parallel execution, numerical accuracy, and an extensive library of fast mathematical functions.</itunes:subtitle>
+      <itunes:author>Quansight, LLC</itunes:author>
+      <itunes:summary>In this episode of Open Source Directions we were joined by Jeff Bezanson and Katie Hyatt who talk about the work they have been doing with Julia. Julia is a programming language that was designed from the beginning for high performance. It programs compile to native code for multiple platforms via LLVM. Julia is dynamically typed, feels like a scripting language, and has good support for interactive use.
+
+Julia has a rich language of descriptive datatypes, and type declarations can be used to clarify and solidify programs. This language uses multiple dispatch as a paradigm, making it easy to express many object-oriented and functional programming patterns. It provides asynchronous I/O, debugging, logging, profiling, a package manager, and more.
+</itunes:summary>
+      <itunes:keywords>open,source,python,roadmaps</itunes:keywords>
+      <feedburner:origLink>https://www.quansight.com/open-source-directions/</feedburner:origLink>
+      <enclosure url="https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd45.ogg" length="18631300" type="audio/ogg" />
+      <feedburner:origEnclosureLink>https://open-source-directions.nyc3.cdn.digitaloceanspaces.com/podcast/osd45.ogg</feedburner:origEnclosureLink>
+    </item>
+    
     
     
     <item>
